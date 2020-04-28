@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* =========================================================
+㉖会員規約
+========================================================= */
+
+/* #page-membership #S-header
+--------------------------------------------------------- */
+#page-membership #S-header {
+	background: $c-gray_bg;
+}
+@include m-smp {
+#page-membership #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-membership #S-01 {
+	margin-bottom: 10px;
+	padding-bottom: 120px;
+	background: $c-gray_bg;
+	p:not(:last-child) {
+		margin-bottom: 1em;
+	}
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+		line-height: 1.8;
+		.intro {
+			margin-bottom: 2em;
+		}
+		.outro {
+			margin: 2em 0 3em;
+		}
+		.text {
+			dl {
+				dt {
+					font-weight: bold;
+				}
+				dd {
+					&:not(:last-child) {
+						margin-bottom: 2em;
+					}
+				}
+				p {
+					&:not(:last-child) {
+						margin-bottom: 1em;
+					}
+				}
+				ol {
+					list-style: none;
+				}
+			}
+		}
+		.inquiry {
+			padding: 20px;
+			background: #FFF;
+		}
+	}
+}
+@include m-smp {
+#page-membership #S-01 {
+	padding-bottom: 60px;
+}
+}

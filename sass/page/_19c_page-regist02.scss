@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* =========================================================
+⑲会員登録：2/3
+========================================================= */
+
+/* #page-regist02 #S-header
+--------------------------------------------------------- */
+#page-regist02 #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-regist02 #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-regist02 #S-01 {
+	padding: 0 0 120px;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.stepViewer {
+		margin-top: 30px;
+	}
+	.intro {
+		text-align: center;
+		font-size: 14px;
+	}
+	.buttonAddCareer {
+		margin-bottom: 100px;
+		text-align: center;
+	}
+	.table {
+		margin-bottom: 40px;
+	}
+	.button {
+		margin-bottom: 20px;
+	}
+	.page {
+		text-align: center;
+	}
+}
+@include m-smp {
+#page-regist02 #S-01 {
+	padding: 0 0 60px;
+	.contents {
+		margin: 0 10px;
+	}
+	.intro {
+		font-size: 14px;
+	}
+	.buttonAddCareer {
+		margin-bottom: 70px;
+	}
+	.table {
+		margin-bottom: 25px;
+	}
+}
+}

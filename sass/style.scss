@@ -1,0 +1,105 @@
+﻿@charset "utf-8";
+
+@import "/assets/css/reset.css";
+
+// setting
+@import "setting/_color";
+@import "setting/_font";
+
+// extend
+@import "extend/_mixin";
+@import "extend/_extend";
+
+// base
+@import "base/_base";
+@import "base/_utility";
+@import "base/_unit";
+
+// parts
+@import "parts/_button";
+@import "parts/_title";
+@import "parts/_tag";
+
+// layout
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_main";
+@import "layout/_aside";
+
+// page
+@import "page/_common_work";
+@import "page/_common_life";
+@import "page/_00_page-parts";
+@import "page/_01_page-top";
+
+@import "page/_02_page-work_top";
+@import "page/_04_page-work_recruitlist";
+@import "page/_05a_page-work_outline";
+@import "page/_05b_page-work_interview";
+@import "page/_05c_page-work_apply";
+@import "page/_26_page-work_regist";
+
+@import "page/_06_page-life_top";
+
+@import "page/_07_page-life_shoku_top";
+@import "page/_07_page-life_hitobito_top";
+@import "page/_07_page-life_fukei_top";
+@import "page/_07_page-life_asobi_top";
+
+@import "page/_09_page-life_shoku_article";
+@import "page/_09_page-life_hitobito_article";
+@import "page/_09_page-life_fukei_article";
+@import "page/_09_page-life_asobi_article";
+
+@import "page/_10_page-about";
+@import "page/_11_page-news";
+@import "page/_12_page-search_result";
+
+@import "page/_13_page-login";
+@import "page/_17a_page-password01";
+@import "page/_17b_page-password02";
+@import "page/_17c_page-password03";
+
+@import "page/_19a_page-regist_email";
+@import "page/_19b_page-regist01";
+@import "page/_19c_page-regist02";
+@import "page/_19d_page-regist03";
+
+@import "page/_20a_page-apply_top";
+
+@import "page/_21_page-privacypolicy";
+@import "page/_26_page-membership";
+@import "page/_22_page-contact";
+@import "page/_24_page-recruit_staff";
+@import "page/_25_page-recruit_contact";
+
+@import "page/_30_page-applicant_mypage_top";
+@import "page/_31_page-info_applicant";
+@import "page/_32a_page-data_edit01";
+@import "page/_32b_page-data_edit02";
+@import "page/_33a_page-withdraw01";
+@import "page/_33b_page-withdraw02";
+
+@import "page/_34a_page-resume_profile01";
+@import "page/_34b_page-resume_profile02";
+@import "page/_34c_page-resume_career01";
+@import "page/_34d_page-resume_career02";
+@import "page/_34e_page-resume_plan01";
+@import "page/_34f_page-resume_plan02";
+
+@import "page/_35_page-liked_company";
+@import "page/_36_page-message_company";
+
+@import "page/_40_page-company_mypage_top";
+@import "page/_41_page-info_company";
+@import "page/_42_page-search_applicant";
+@import "page/_43_page-applicant_management";
+@import "page/_44a_page-applicant_detail_scout";
+@import "page/_44b_page-applicant_detail_applicant";
+
+@import "page/_45_page-message_applicant";
+@import "page/_46_page-message_scout";
+
+
+
+

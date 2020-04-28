@@ -1,0 +1,30 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+㊱応募企業 メッセージ①／㊲応募企業 メッセージ②
+========================================================= */
+
+/* #page-message-company #S-header
+--------------------------------------------------------- */
+#page-message-company #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-message-company #S-header {
+}
+}
+
+
+
+/* #page-message-company #dialogue
+--------------------------------------------------------- */
+#page-message-company #dialogue {
+	padding-top: 30px;
+}
+@include m-smp {
+#page-message-company #dialogue {
+	padding-top: 40px;
+}
+}
+

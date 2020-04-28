@@ -1,0 +1,1123 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+ユーティリティ
+========================================================= */
+
+/* media
+--------------------------------------------------------- */
+@include m-pc {
+	.u-media-SP {
+		display: none !important;
+	}
+	.u-media-TAB {
+		display: none !important;
+	}
+}
+@include m-tab {
+	.u-media-SP {
+		display: none !important;
+	}
+	.u-media-TAB {
+		display: inline-block !important;
+	}
+
+}
+@include m-smp {
+	.u-media-PC {
+		display: none !important;
+	}
+	.u-media-SP {
+		display: block !important;
+		&.inline {
+			display: inline-block !important;
+		}
+		&.block {
+			display: block !important;
+		}
+		&.flex {
+			display: flex !important;
+		}
+	}
+}
+
+/* margin-bottom
+--------------------------------------------------------- */
+.u-mb {
+	margin-bottom: 20px;
+}
+.u-mb-VS {
+	margin-bottom: 5px;
+}
+.u-mb-S {
+	margin-bottom: 10px;
+}
+.u-mb-L {
+	margin-bottom: 40px;
+}
+
+/* margin-top
+--------------------------------------------------------- */
+.u-mt {
+	margin-top: 20px;
+}
+.u-mt-VS {
+	margin-top: 5px;
+}
+.u-mt-S {
+	margin-top: 10px;
+}
+.u-mt-L {
+	margin-top: 40px;
+}
+
+/* text-align
+--------------------------------------------------------- */
+.u-textAlign-L {
+	text-align: left;
+}
+.u-textAlign-R {
+	text-align: right;
+}
+.u-textAlign-C {
+	text-align: center;
+}
+
+/* 隙間
+--------------------------------------------------------- */
+.u-blank {
+	display: inline-block;
+	width: 0.5em;
+}
+
+/* カスタムチェックボックス
+--------------------------------------------------------- */
+.u-checkbox {
+	input[type="checkbox"] {
+		display: none;
+	}
+	label {
+		position: relative;
+		display: inline-block;
+		padding-left: 30px;
+		cursor: pointer;
+		&:after {
+			position: absolute; /* ボックスの位置を指定する */
+			content: ""; /* ボックスのコンテンツ */
+			display: block; /* ブロックレベル要素化する */
+			top: 50%; /* 上部から配置の基準位置を決める */
+			left: 0; /* 左から配置の基準位置を決める */
+			transform: translateY(-50%);
+			width: 17px; /* ボックスの横幅を指定する */
+			height: 17px; /* ボックスの高さを指定する */
+			background: url(/assets/images/cmn/checkbox_ic01.png) center no-repeat;
+			background-size: cover;
+		}
+	}
+	input[type="checkbox"]:checked + label {
+		&:after {
+			background: url(/assets/images/cmn/checkbox_ic02.png) center no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+/* フェード
+--------------------------------------------------------- */
+.u-fader {
+	@include m-fader;
+}
+
+/* リンク下線
+--------------------------------------------------------- */
+.u-hover_underline {
+	position: relative;
+	display: inline-block;
+	&:after {
+		display: block;
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		transform: scale(0,1);
+		transform-origin: left bottom;
+		background-color: #000;
+		content: '';
+		transition: transform .3s ease;
+	}
+	&:hover {
+		&:after {
+			transform: scale(1,1);
+		}
+	}
+}
+
+/* 「必須」アイコン
+--------------------------------------------------------- */
+.u-iconRequired {
+	white-space: nowrap;
+	display: inline-block;
+	padding: 5px 10px;
+	line-height: 1;
+	color: #FFF;
+	background: #FF5000;
+}
+@include m-smp {
+.u-iconRequired {
+	padding: 3px 10px;
+	font-size: 12px;
+}
+}
+
+/* iframe
+--------------------------------------------------------- */
+.u-iframe {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+.u-iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 入力系パーツ
+--------------------------------------------------------- */
+.u-inputText{
+	box-sizing: border-box;
+	border: 1px solid #C8C8C8;
+	padding: 7px 10px;
+	width: 100%;
+	font-size: 16px;
+	&.full {
+		width: 100%;
+	}
+	&.middle {
+		width: 200px;
+	}
+	&.short {
+		width: 105px;
+	}
+	&.textarea {
+		width: 100%;
+		height: 450px;
+		&.low {
+			height: 5em;
+		}
+	}
+}
+@include m-smp {
+.u-inputText{
+	padding: 3px 5px;
+	font-size: 14px;
+	&.full {
+		width: 100%;
+	}
+	&.middle {
+		width: 100%;
+	}
+	&.short {
+		width: 100%;
+		max-width: 120px;
+	}
+	&.textarea {
+		width: 100%;
+		height: 300px;
+	}
+}
+}
+
+/* オフセット付きリスト
+--------------------------------------------------------- */
+.u-offsetList {
+	list-style: none;
+	li {
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+}
+
+/* カスタムラジオボタン
+--------------------------------------------------------- */
+.u-radio {
+	input[type="radio"] {
+		display: none;
+	}
+	label {
+		position: relative;
+		display: inline-block;
+		padding-left: 24px;
+		cursor: pointer;
+		&:after {
+			position: absolute; /* ボックスの位置を指定する */
+			content: ""; /* ボックスのコンテンツ */
+			display: block; /* ブロックレベル要素化する */
+			top: 50%; /* 上部から配置の基準位置を決める */
+			left: 0; /* 左から配置の基準位置を決める */
+			transform: translateY(-50%);
+			width: 17px; /* ボックスの横幅を指定する */
+			height: 17px; /* ボックスの高さを指定する */
+			background: url(/assets/images/cmn/radio_ic01.png) center no-repeat;
+			background-size: cover;
+		}
+	}
+	input[type="radio"]:checked + label {
+		&:after {
+			background: url(/assets/images/cmn/radio_ic02.png) center no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+/* レスポンシブテーブル
+--------------------------------------------------------- */
+.u-responsiveTable {
+	width: 100%;
+	th, td {
+		box-sizing: border-box;
+		border: 1px solid #C8C8C8;
+		padding: 20px 15px;
+	}
+	thead {
+		tr {
+			font-size: 20px;
+			color: #FFF;
+			background: $c-blue_light;
+			th {
+				padding: 5px;
+			}
+		}
+	}
+	tbody {
+		tr {
+			th {
+				vertical-align: middle;
+				width: 210px;
+				text-align: left;
+				background: $c-blue_pale;
+				&[colspan="2"] {
+					text-align: center;
+					background: $c-gray_bg;
+				}
+			}
+		}
+	}
+}
+@include m-smp {
+.u-responsiveTable {
+	width: 100%;
+	thead, tbody, tr, th, td {
+		display: block;
+		width: 100% !important;
+	}
+	th, td {
+		box-sizing: border-box;
+		border: 1px solid #C8C8C8;
+		padding: 5px 10px;
+		&:not(:last-child) {
+			border-top: none;
+			border-bottom: none;
+		}
+	}
+	thead {
+		tr {
+			font-size: 17px;
+			text-align: center;
+			th {
+				border-bottom: none;
+				padding: 5px;
+			}
+		}
+	}
+	tbody {
+		tr {
+			th {
+				width: auto;
+				text-align: center;
+			}
+			th, td {
+				border-top: none;
+			}
+			td[colspan="2"] {
+				padding: 10px;
+			}
+		}
+	}
+}	
+}
+
+/* セレクトボックス
+--------------------------------------------------------- */
+.u-select {
+	&.full {
+		width: 100%;
+	}
+	&.long {
+		min-width: 300px;
+	}
+	&.middle {
+		min-width: 160px;
+	}
+	&.short {
+		min-width: 140px;
+	}
+}
+@include m-smp {
+.u-select {
+	&.long {
+		min-width: auto;
+		width: 100%;
+	}
+}
+}
+
+/* 横マージン
+--------------------------------------------------------- */
+.u-spacer {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: 1200px;
+}
+@include m-smp {
+.u-spacer {
+	padding: 0 10px;
+	max-width: none;
+}
+}
+.u-spacer_middle {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: 1000px;
+}
+@include m-smp {
+.u-spacer_middle {
+	padding: 0 10px;
+	max-width: none;
+}
+}
+.u-spacer_narrow {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: 900px;
+}
+@include m-smp {
+.u-spacer_narrow {
+	padding: 0 10px;
+	max-width: none;
+}
+}
+
+/* フローを示すボックス
+--------------------------------------------------------- */
+.u-stepBox {
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+	background: $c-blue_pale;
+	&:not(:last-child) {
+		margin-bottom: 50px;
+		&:after {
+			position: absolute;
+			left: 50%;
+			bottom: -19px;
+			transform: translateX(-50%);
+			display: inline-block;
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20px 15px 0 15px;
+			border-color: $c-blue_pale transparent transparent transparent;
+		}
+	}
+	.title {
+		display: block;
+		font-size: 18px;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	.icon {
+		position: absolute;
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 32px;
+	}
+}
+@include m-smp {
+.u-stepBox {
+	padding: 20px;
+	&:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.title {
+		font-size: 16px;
+	}
+	.icon {
+		width: 24px;
+	}
+}
+}
+@include m-micro {
+.u-stepBox {
+	.title {
+		font-size: 16px;
+	}
+}
+}
+
+/* テーブル
+--------------------------------------------------------- */
+.u-table {
+	border-collapse: collapse;
+	width: 100%;
+	tr {
+		&:not(:last-child) {
+			th, td {
+				border-bottom: 2px solid #FFF;
+			}
+		}
+	}
+	th, td {
+		box-sizing: border-box;
+		padding: 15px 10px;
+		vertical-align: middle;
+		line-height: 1.4;
+	}
+	th {
+		width: 130px;
+		text-align: center;
+		font-weight: bold;
+		color: #FFF;
+	}
+	td {
+		word-break: break-all;
+	}
+}
+@include m-smp {
+.u-table {
+	th {
+		width: 105px;
+	}
+}
+}
+.u-table.work {
+	th {
+		background: #7894CF;
+	}
+	td {
+		background: $c-gray_bg;
+	}
+}
+
+/* テーブル注意書き
+--------------------------------------------------------- */
+.u-tableAnnotation {
+	margin-bottom: 10px;
+	text-align: center;
+	.asterisk {
+		color: #FF5000;
+	}
+}
+
+/* テーブル
+--------------------------------------------------------- */
+.u-tableApply {
+	border-collapse: collapse;
+	width: 100%;
+	th, td {
+		border: 1px solid #C8C8C8;
+	}
+	th {
+		box-sizing: border-box;
+		padding: 10px 20px;
+		width: 210px;
+		background: #EBEFF4;
+	}
+	td {
+		padding: 20px;
+	}
+	&.flat {
+		text-align: center;
+	}
+	thead {
+		th {
+			background: #F5F5F5;
+		}
+	}
+	tbody {
+		th {
+			text-align: left;
+		}
+	}
+	.accordion {
+		display: none;
+		box-sizing: border-box;
+		margin-left: -145px;
+		margin-right: -20px;
+		.tableSection {
+			&:not(:first-child) {
+				margin-top: 40px;
+				border-top: 1px solid #000;
+			}
+		}
+	}
+}
+@include m-smp {
+.u-tableApply {
+	border: 1px solid #C8C8C8;
+	thead, tbody, tr, th, td {
+		display: block;
+		box-sizing: border-box;
+		width: 100% !important;
+	}
+	th, td {
+		border: 1px solid #C8C8C8;
+		border: none;
+	}
+	th {
+		padding: 5px !important;
+		background: #EBEFF4;
+	}
+	td {
+		padding: 0;
+	}
+	&.flat {
+		td {
+			padding: 15px 10px;
+		}
+	}
+	.opener {
+		margin: 5px 0;
+		text-align: center;
+	}
+	tbody {
+		th {
+			text-align: center;
+		}
+	}
+	.accordion {
+		box-sizing: border-box;
+		margin-left: 0;
+		margin-right: 0;
+		.tableSection {
+			&:not(:first-child) {
+				margin-top: 5px;
+				padding-top: 10px;
+			}
+		}
+	}
+}
+}
+
+/* テーブル
+--------------------------------------------------------- */
+.u-tableContact {
+	border-collapse: collapse;
+	width: 100%;
+	th, td {
+		box-sizing: border-box;
+		border: 1px solid #C8C8C8;
+		vertical-align: middle;
+		line-height: 1.4;
+	}
+	th {
+		vertical-align: top;
+		padding: 25px 15px;
+		width: 220px;
+		text-align: left;
+		font-weight: bold;
+		background: #F5F5F5;
+		.inner {
+			position: relative;
+			.icon {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			.asterisk {
+				margin-left: 0.5em;
+				color: #FF5000;
+			}
+			.asteriskText {
+				color: #FF5000;
+				font-size: 12px;
+				strong {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	td {
+		padding: 15px;
+		label {
+			white-space: nowrap;
+		}
+		dl {
+			dt {
+				font-weight: bold;
+			}
+			dd {
+				&:not(:last-child) {
+					margin-bottom: 1em;
+				}
+			}
+		}
+		pre {
+			overflow-y: scroll;
+			box-sizing: border-box;
+			padding-bottom: 10px;
+			max-height: 450px;
+		}
+		.icon {
+			margin-right: 10px;
+		}
+		.flex {
+			display: flex;
+			flex-wrap: wrap;
+			.cell {
+				display: flex;
+				align-items: center;
+				min-width: 160px;
+				&:not(:last-child) {
+					margin-right: 30px;
+				}
+				.title {
+					white-space: nowrap;
+					margin-right: 10px;
+					font-weight: bold;
+				}
+			}
+			&.sizeFull {
+				.cell {
+					width: 100%;
+					&:not(:last-child) {
+						margin-bottom: 15px;
+						margin-right: 0;
+					}
+				}
+				.title {
+					white-space: nowrap;
+				}
+				.input {
+					width: 100%;
+				}
+			}
+			&.sizeFree {
+				.cell {
+					min-width: auto;
+					.input {
+						white-space: nowrap;
+					}
+				}
+			}
+			&.sizeShrink {
+				.cell {
+					min-width: auto;
+					margin-right: 10px;
+				}
+			}
+			&.sizePeriod {
+				.cell {
+					width: auto;
+					min-width: auto;
+					&:not(:last-child) {
+						margin-right: 10px;
+					}
+					select {
+						margin-right: 0;
+						min-width: auto;
+					}
+				}
+				.periodResignation {
+					display: flex;
+				}
+			}
+		}
+		.input {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		.lead {
+			margin-bottom: 5px;
+		}
+		.label {
+			font-size: 12px;
+			margin-bottom: 5px;
+			strong {
+				font-weight: normal;
+			}
+		}
+		.annotation {
+			font-size: 12px;
+		}
+	}
+}
+@include m-smp {
+.u-tableContact {
+	border-collapse: collapse;
+	width: 100%;
+	thead, tbody, tr, th, td {
+		display: block;
+	}
+	th, td {
+		padding: 5px;
+		width: 100%;
+	}
+	tr:not(:last-child) {
+		td {
+			border-bottom: none;
+		}
+	}
+	th {
+		border-bottom: none;
+	}
+	td {
+		border-top: none;
+		.parts-button_simple.mini {
+			height: 32px;
+		}
+		.flex {
+			.cell {
+				box-sizing: border-box;
+				width: 50%;
+				min-width: auto;
+				&:nth-child(odd) {
+					padding-right: 10px;
+				}
+				&:nth-child(even) {
+					padding-left: 10px;
+				}
+				&:not(:last-child) {
+					margin-right: 0;
+				}
+				.title {
+					margin-right: 10px;
+				}
+			}
+			&.sizeFull {
+				.cell {
+					width: 100%;
+					&:nth-child(odd) {
+						padding-right: 0;
+					}
+					&:nth-child(even) {
+						padding-left: 0;
+					}
+					&:not(:last-child) {
+						margin-bottom: 5px;
+						margin-right: 0;
+					}
+				}
+				.title {
+					white-space: nowrap;
+				}
+				.icon + .title + .input {
+					margin-top: 5px;
+				}
+				.input {
+					width: 100%;
+				}
+			}
+			&.sizeFree {
+				.cell {
+					min-width: auto;
+					width: auto;
+					&:nth-child(even) {
+						padding-left: 0;
+					}
+					&:nth-child(odd) {
+						padding-right: 0;
+					}
+					&:not(:last-child) {
+						padding-right: 10px;
+					}
+				}
+			}
+			&.sizeShrink {
+				.cell {
+					&:nth-child(even) {
+						padding-left: 0;
+					}
+					&:nth-child(odd) {
+						padding-right: 0;
+					}
+					min-width: auto;
+					margin-right: 10px;
+					width: 80px;
+				}
+			}
+			&.sizePeriod {
+				.cell {
+					padding: 0 !important;
+					&:not(:last-child) {
+						margin-right: 10px;
+					}
+				}
+				.periodResignation {
+					margin-top: 5px;
+				}
+			}
+		}
+		.input {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		.annotation {
+			font-size: 12px;
+		}
+	}
+}	
+}
+@include m-micro {
+.u-tableContact {
+	border-collapse: collapse;
+	width: 100%;
+	thead, tbody, tr, th, td {
+		display: block;
+	}
+	th, td {
+		padding: 5px;
+		width: 100%;
+	}
+	tr:not(:last-child) {
+		td {
+			border-bottom: none;
+		}
+	}
+	th {
+		border-bottom: none;
+	}
+	td {
+		border-top: none;
+		font-size: 12px;
+		.flex {
+			.cell {
+				box-sizing: border-box;
+				width: 50%;
+				min-width: auto;
+				&:nth-child(odd) {
+					padding-right: 10px;
+				}
+				&:nth-child(even) {
+					padding-left: 10px;
+				}
+				&:not(:last-child) {
+					margin-right: 0;
+				}
+				.title {
+					margin-right: 10px;
+				}
+			}
+			&.sizeFull {
+				.cell {
+					width: 100%;
+					&:nth-child(odd) {
+						padding-right: 0;
+					}
+					&:nth-child(even) {
+						padding-left: 0;
+					}
+					&:not(:last-child) {
+						margin-bottom: 5px;
+						margin-right: 0;
+					}
+				}
+				.title {
+					white-space: nowrap;
+				}
+				.input {
+					width: 100%;
+				}
+			}
+			&.sizeFree {
+				.cell {
+					min-width: auto;
+					width: auto;
+					&:nth-child(even) {
+						padding-left: 0;
+					}
+					&:nth-child(odd) {
+						padding-right: 0;
+					}
+					&:not(:last-child) {
+						padding-right: 10px;
+					}
+					select {
+						margin-right: 3px;
+						min-width: auto;
+					}
+				}
+			}
+			&.sizeShrink {
+				.cell {
+					&:nth-child(even) {
+						padding-left: 0;
+					}
+					&:nth-child(odd) {
+						padding-right: 0;
+					}
+					.title {
+						margin-right: 5px;
+					}
+					min-width: auto;
+					margin-right: 5px;
+					width: 70px;
+				}
+			}
+		}
+		.input {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		.annotation {
+			font-size: 12px;
+		}
+	}
+}	
+}
+
+/* 最終学歴 */
+.u-tableContact .row_finalEducation {
+	.flex {
+		.cell {
+			.title {
+				margin-right: 10px;
+				min-width: 8em;
+			}
+			&.research {
+				flex-wrap: wrap;
+				.title {
+					margin-bottom: 5px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+@include m-smp {
+.u-tableContact .row_finalEducation {
+	.flex {
+		.cell {
+			flex-wrap: wrap;
+			.title {
+				margin-right: 0;
+				min-width: 8em;
+			}
+			.input {
+				margin-top: 0;
+				width: 100%;
+			}
+			&.research {
+				flex-wrap: wrap;
+				.title {
+					margin-bottom: 5px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+}
+
+.u-tableContact.nested {
+	margin-top: 20px;
+	width: 100%;
+	th, td {
+		border: none;
+		background: none;
+	}
+	tr:not(:last-child) {
+		th, td {
+			border-bottom: 1px solid #C8C8C8;
+		}
+	}
+	tr:last-child {
+		th, td {
+			padding-bottom: 0;
+		}
+	}
+	th {
+		padding: 25px 0;
+		width: 130px;
+	}
+}
+@include m-smp {
+.u-tableContact.nested {
+	margin-top: 0;
+	width: 100%;
+	th, td {
+		border: none;
+		background: none;
+	}
+	tr:not(:last-child) {
+		th, td {
+			border-bottom: none;
+		}
+	}
+	th {
+		border-top: 1px solid #C8C8C8;
+		background: #F5F5F5;
+	}
+	tr:last-child {
+		th, td {
+			padding-bottom: 5px;
+		}
+	}
+	th {
+		padding: 25px 0;
+		width: 130px;
+	}
+}
+}
+
+/* <pre>のような<textarea>
+--------------------------------------------------------- */
+.u-textareaPre {
+	overflow-y: scroll;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	height: 450px;
+}
+@include m-smp {
+.u-textareaPre {
+	display: block;
+	padding-right: 10px;
+	height: auto;
+	max-height: 300px;
+}
+}
+
+/* 下線付きリンク
+--------------------------------------------------------- */
+.u-underline {
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* ホバー時下線付きリンク
+--------------------------------------------------------- */
+.u-hoverline {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,95 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+一般タグに対する設定
+========================================================= */
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+em, i {
+	font-style: normal;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+::placeholder {
+	color: #AAA;
+}
+
+input[type="button"],
+input[type="text"],
+input[type="submit"],
+input[type="image"],
+textarea,
+select {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+border-radius: 0;
+font-size: 16px;
+resize: vertical;
+}
+
+select {
+	box-sizing: border-box;
+	border: 1px solid #C8C8C8;
+	background: url("/assets/images/cmn/select_ic01.png") right center no-repeat #FFF;
+	background-size: 18px 11px;
+	margin-right: 10px;
+	padding: 6px;
+	padding-right: 40px;
+	min-width: 90px;
+	font-size: 16px;
+	line-height: 24px;
+}
+@include m-smp {
+	select {
+		margin-right: 5px;
+		padding: 3px 5px;
+		padding-right: 30px;
+		min-width: 80px;
+		font-size: 14px;
+	}
+}
+
+textarea {
+	vertical-align: bottom;
+	box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+input[type="text"] {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    line-height: 24px;
+}
+button,
+input[type="submit"],
+input[type="button"] {
+	border-radius: 0;
+	-webkit-box-sizing: content-box;
+	-webkit-appearance: button;
+	appearance: button;
+	border: none;
+	box-sizing: border-box;
+	padding: 0;
+	&::-webkit-search-decoration {
+		display: none;
+	}
+	&::focus {
+		outline-offset: -2px;
+	}
+}
+sup {
+	font-size: 10px;
+	vertical-align: text-top;
+}

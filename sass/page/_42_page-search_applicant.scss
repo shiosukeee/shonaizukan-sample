@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* =========================================================
+㊷求職者を探す
+========================================================= */
+
+/* #page-search-applicant #S-header
+--------------------------------------------------------- */
+#page-search-applicant #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-search-applicant #S-header {
+}
+}
+
+/* #page-search-applicant #S-01
+--------------------------------------------------------- */
+#page-search-applicant #S-01 {
+	padding: 30px 0;
+	background: $c-blue_pale;
+}
+@include m-smp {
+#page-search-applicant #S-01 {
+	padding: 20px 0;
+}
+}
+
+/* #page-search-applicant #S-02
+--------------------------------------------------------- */
+#page-search-applicant #S-02 {
+	padding: 40px 0 120px;
+	.pager {
+		&.above {
+			margin-bottom: 40px;
+		}
+		&.below {
+			margin-top: 40px;
+		}
+	}
+}
+@include m-smp {
+#page-search-applicant #S-02 {
+	padding: 30px 0 70px;
+	.pager {
+		&.above {
+			margin-bottom: 30px;
+		}
+		&.below {
+			margin-top: 30px;
+		}
+	}
+}
+}
+
+

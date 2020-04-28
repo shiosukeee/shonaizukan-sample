@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* =========================================================
+㉚求職者マイページTOP
+========================================================= */
+
+/* #page-applicant-mypage-top #S-header
+--------------------------------------------------------- */
+#page-applicant-mypage-top #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-applicant-mypage-top #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-applicant-mypage-top #S-01 {
+	padding: 40px 0;
+	.title {
+		margin-bottom: 10px;
+	}
+	.contents {
+		margin: 0 auto;
+		max-width: 760px;
+	}
+}
+@include m-smp {
+#page-applicant-mypage-top #S-01 {
+	padding: 20px 0;
+}
+}
+
+/* #page-search-result #S-02
+--------------------------------------------------------- */
+#page-applicant-mypage-top #S-02 {
+	margin-bottom: 10px;
+	padding: 30px 0;
+    background: #EBEFF4;
+	text-align: center;
+	.button {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+	.banner {
+		li {
+			display: inline-block;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+			a {
+				@include m-fader;
+			}
+		}
+	}
+}
+@include m-smp {
+#page-applicant-mypage-top #S-02 {
+	padding: 20px 0;
+	.button {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+}
+
+/* #page-search-result #S-03
+--------------------------------------------------------- */
+#page-applicant-mypage-top #S-03 {
+	padding: 30px 0;
+    background: #EBEFF4;
+}
+@include m-smp {
+#page-applicant-mypage-top #S-03 {
+}
+}
+
+/* #page-search-result #S-04
+--------------------------------------------------------- */
+#page-applicant-mypage-top #S-04 {
+	padding: 40px 0 120px;
+}
+@include m-smp {
+#page-applicant-mypage-top #S-04 {
+	padding: 30px 0 80px;
+}
+}

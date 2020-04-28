@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* =========================================================
+⑥LIFE　TOP
+========================================================= */
+
+/* #page-life-top #S-header
+--------------------------------------------------------- */
+#page-life-top #S-header {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background: $c-beige_pale;
+	.parts-title_A.life {
+		margin-bottom: 0;
+		.main span {
+			display: inline-block;
+			width: 316px;
+		}
+	}
+}
+@include m-smp {
+#page-life-top #S-header {
+	padding-top: 20px 0;
+	.parts-title_A.life {
+		.main span {
+			width: auto;
+		}
+	}
+}
+}
+
+/* #page-life-top #S-01
+--------------------------------------------------------- */
+#page-life-top #S-01 {
+	position: relative;
+    margin-bottom: 10px;
+	padding-bottom: 60px;
+	background: $c-beige_pale;
+    .categoryCarousel {
+        margin-bottom: 40px;
+    }
+}
+@include m-smp {
+#page-life-top #S-01 {
+	padding-bottom: 30px;
+	.unit-annotation {
+		margin-top: 20px;
+	}
+    .categoryCarousel {
+        margin-bottom: 30px;
+    }
+}
+}
+
+/* #page-life-top #S-02
+--------------------------------------------------------- */
+#page-life-top #S-02 {
+    .S-lifeTopCategory {
+        padding: 50px 0;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        .articles {
+            margin-bottom: 10px;
+			article:last-child {
+				display: none;
+			}
+        }
+		.title {
+			margin-bottom: 20px;
+		}
+    }
+    #S-SHOKU {
+        background: url(/assets/images/life/life-shoku_bg01.png) right top no-repeat #FEFAE1;
+        background-size: 147px 147px;
+        .title {
+            p {
+                width: 154px;
+            }
+        }
+    }
+    #S-ASOBI {
+        background: url(/assets/images/life/life-asobi_bg01.png) right top no-repeat #E7F1EC;
+        background-size: 320px 148px;
+        .title {
+            p {
+                width: 174px;
+            }
+        }
+    }
+    #S-FUKEI {
+        background: url(/assets/images/life/life-fukei_bg01.png) right top no-repeat #E3F4FB;
+        background-size: 314px 143px;
+        .title {
+            p {
+                width: 109px;
+            }
+        }
+    }
+    #S-HITOBITO {
+        background: url(/assets/images/life/life-hitobito_bg01.png) right top no-repeat #FEF3EE;
+        background-size: 264px 136px;
+        .title {
+            p {
+                width: 114px;
+            }
+        }
+    }
+}
+@include m-smp {
+#page-life-top #S-02 {
+    .S-lifeTopCategory {
+        padding: 20px 0;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        .articles {
+            margin-bottom: 10px;
+			article:last-child {
+				display: block;
+			}
+        }
+    }
+    #S-SHOKU {
+        background-size: 85px 85px;
+        .title {
+            p {
+                width: 115px;
+            }
+        }
+    }
+    #S-ASOBI {
+        background-size: 180px 83px;
+        .title {
+            p {
+                width: 130px;
+            }
+        }
+    }
+    #S-FUKEI {
+        background-size: 185px 84px;
+        .title {
+            p {
+                width: 80px;
+            }
+        }
+    }
+    #S-HITOBITO {
+        background-size: 148px 76px;
+        .title {
+            p {
+                width: 84px;
+            }
+        }
+    }
+}
+}
+
+/* #page-life-top #S-03
+--------------------------------------------------------- */
+#page-life-top #S-03 {
+    padding: 90px 0 120px;
+    .sectionTitle {
+        margin-bottom: 40px;
+        span {
+            width: 145px;
+        }
+    }
+    .intro {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 16px;
+    }
+	.info {
+		text-align: center;
+		.text {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+		li {
+			width: 350px;
+		}
+	}
+}
+@include m-smp {
+#page-life-top #S-03 {
+    padding: 50px 0 80px;
+    .sectionTitle {
+        margin-bottom: 20px;
+        span {
+            width: 104px;
+        }
+    }
+    .intro {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+	.info {
+		.text {
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+		li {
+			width: 100%;
+			max-width: 350px;
+		}
+	}
+}
+}
+
+

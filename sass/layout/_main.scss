@@ -1,0 +1,213 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+<main>のレイアウト
+========================================================= */
+main {
+	display: block;
+	min-height: 380px;
+}
+@include m-smp {
+main {
+	min-height: 380px;
+}
+}
+body {
+	overflow-x: hidden;
+	padding-top: 60px;
+	-webkit-text-size-adjust: 100%;
+	&.js-isLoading {
+		overflow-y: auto;
+	}
+}
+@include m-smp {
+body {
+	padding-top: 45px;
+	&.js-isSidebarShown {
+		overflow: hidden;
+	}
+}
+}
+
+/* =========================================================
+#loader
+========================================================= */
+#loader {
+	$loaderWidth: 209px;
+	$loaderHeight: 27px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 20000;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	h1 {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: $loaderWidth;
+		height: $loaderHeight;
+		background: url("/assets/images/cmn/loader_tl_02.png") center no-repeat;
+		background-size: cover;
+		#js-loader {
+			overflow: hidden;
+			display: inline-block;
+			width: 0;
+			height: $loaderHeight;
+			i {
+				display: inline-block;
+				width: $loaderWidth;
+				height: $loaderHeight;
+				background: url("/assets/images/cmn/loader_tl_01.png") center no-repeat;
+				background-size: cover;
+				text-indent: -9999px;
+			}
+		}
+	}
+}
+
+/* =========================================================
+#modalLike
+========================================================= */
+#modalLike {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 599;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 0 20px;
+	.bg {
+		position: relative;
+		box-sizing: border-box;
+		padding: 50px 80px;
+		width: 600px;
+		font-size: 16px;
+		text-align: center;
+		color: #FFF;
+		background: rgba(0, 35, 93, 0.98);
+		a {
+			color: #FFF;
+		}
+		.text {
+			margin-bottom: 40px;
+		}
+		.select {
+			margin-bottom: 40px;
+			.yes {
+				margin-bottom: 40px;
+				font-size: 20px;
+			}
+			.no {
+				cursor: pointer;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			span {
+				@include m-fader;
+				cursor: pointer;
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				text-indent: -9999px;
+				background: url(/assets/images/cmn/hdr_menu_ic07.png) center no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}
+@include m-smp {
+#modalLike {
+	margin: 0 auto;
+	width: 100%;
+	.bg {
+		margin: 0 auto;
+		padding: 50px;
+		max-width: 600px;
+		width: auto;
+		font-size: 15px;
+		.text {
+			margin-bottom: 30px;
+		}
+		.select {
+			margin-bottom: 30px;
+			.yes {
+				margin-bottom: 30px;
+				font-size: 17px;
+			}
+		}
+		.closebutton {
+			right: 20px;
+			top: 20px;
+		}
+	}
+}
+}
+
+/* =========================================================
+#pagetop
+========================================================= */
+#pagetop {
+	display: none;
+	position: fixed;
+	right: 30px;
+	bottom: 130px;
+	z-index: 1000;
+    height: 40px;
+	a {
+		position: relative;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background: #B4B4B4;
+		span {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: url("/assets/images/cmn/pagetop_ic01.png") center no-repeat;
+			background-size: cover;
+			text-indent: -9999px;
+			&:before {
+				transition: transform 0.3s;
+				display: inline-block;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 16px;
+				height: 16px;
+				background: url("/assets/images/cmn/pagetop_ic02.png") center no-repeat;
+				background-size: cover;
+			}
+		}
+		&:hover {
+			span:before {
+				transform: translateY(-5px);
+			}
+		}
+	}
+}
+@include m-smp {
+#pagetop {
+	right: 10px;
+	bottom: 80px;
+	a {
+		width: 30px;
+		height: 30px;
+		span {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* =========================================================
+㊵企業マイページTOP
+========================================================= */
+
+/* #page-company-mypage-top #S-header
+--------------------------------------------------------- */
+#page-company-mypage-top #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-company-mypage-top #S-header {
+}
+}
+
+/* #page-company-mypage-top #S-01
+--------------------------------------------------------- */
+#page-company-mypage-top #S-01 {
+	padding: 40px 0;
+	.title {
+		margin-bottom: 10px;
+	}
+	.contents {
+		margin: 0 auto;
+		max-width: 760px;
+	}
+	.search {
+		.unit-buttons {
+			span {
+				font-size: 18px;
+			}
+		}
+	}
+}
+@include m-smp {
+#page-company-mypage-top #S-01 {
+	padding: 20px 0;
+}
+}
+
+/* #page-company-mypage-top #S-02
+--------------------------------------------------------- */
+#page-company-mypage-top #S-02 {
+	padding: 30px 0;
+    background: #EBEFF4;
+}
+@include m-smp {
+#page-company-mypage-top #S-02 {
+	.searchBox {
+		width: auto;
+	}
+}
+}
+
+/* #page-company-mypage-top #S-03
+--------------------------------------------------------- */
+#page-company-mypage-top #S-03 {
+	padding: 40px 0 120px;
+}
+@include m-smp {
+#page-company-mypage-top #S-03 {
+	padding: 30px 0 80px;
+}
+}

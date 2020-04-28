@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* =========================================================
+⑫検索結果一覧
+========================================================= */
+
+/* #page-search-result #S-header
+--------------------------------------------------------- */
+#page-search-result #S-header {
+	background: $c-gray_bg;
+}
+@include m-smp {
+#page-search-result #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-search-result #S-01 {
+	margin-bottom: 10px;
+	padding-bottom: 100px;
+	background: $c-gray_bg;
+	.pager.above {
+		margin-bottom: 30px;
+	}
+	.pager.below {
+		margin-top: 30px;
+	}
+}
+@include m-smp {
+#page-search-result #S-01 {
+	padding-bottom: 60px;
+}
+}

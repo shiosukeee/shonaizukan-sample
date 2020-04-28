@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* =========================================================
+⑳企業への応募
+========================================================= */
+
+/* #page-apply-top #S-header
+--------------------------------------------------------- */
+#page-apply-top #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-apply-top #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-apply-top #S-01 {
+	padding: 0 0 120px;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.intro {
+		text-align: center;
+		font-size: 14px;
+	}
+	.tableContainer {
+		margin-bottom: 40px;
+	}
+	.upload {
+		.lead {
+			margin-bottom: 15px;
+		}
+		.type {
+			display: flex;
+			margin: 0 auto 15px;
+			width: 340px;
+			justify-content: space-between;
+			article {
+				width: 140px;
+			}
+		}
+		.format {
+			font-size: 12px;
+		}
+	}
+}
+@include m-smp {
+#page-apply-top #S-01 {
+	padding: 0 0 60px;
+	.contents {
+		margin: 0 10px;
+	}
+	.intro {
+		font-size: 14px;
+	}
+	.tableContainer {
+		margin-bottom: 20px;
+	}
+	.upload {
+		.lead {
+			margin-bottom: 10px;
+			font-size: 13px;
+		}
+		.type {
+			box-sizing: border-box;
+			display: flex;
+			margin: 0 auto 10px;
+			padding: 0 5px;
+			width: auto;
+			max-width: 290px;
+			justify-content: space-between;
+			article {
+				width: auto;
+				max-width: 140px;
+			}
+		}
+		.format {
+			font-size: 12px;
+		}
+	}
+
+}
+}
+

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* =========================================================
+㉕求人掲載のお問い合わせ
+========================================================= */
+
+/* #page-recruit-contact #S-header
+--------------------------------------------------------- */
+#page-recruit-contact #S-header {
+	background: $c-blue_pale;
+	.title {
+		span {
+			width: 404px;
+		}
+	}
+}
+@include m-smp {
+#page-recruit-contact #S-header {
+	.title {
+		span {
+			margin: 0 auto;
+			width: 290px;
+		}
+	}
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-recruit-contact #S-01 {
+	padding: 0 0 120px;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.table {
+		margin-bottom: 20px;
+	}
+	.notice {
+		margin-bottom: 40px;
+		font-size: 12px;
+		dt {
+			font-weight: bold;
+		}
+	}
+}
+@include m-smp {
+#page-recruit-contact #S-01 {
+	padding: 0 0 60px;
+	.contents {
+		margin: 0 10px;
+	}
+	.table {
+		margin-bottom: 10px;
+	}
+	.notice {
+		margin-bottom: 20px;
+		font-size: 12px;
+	}
+}
+}

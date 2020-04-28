@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* =========================================================
+㊶Info
+========================================================= */
+
+/* #page-info-company #S-header
+--------------------------------------------------------- */
+#page-info-company #S-header {
+	background: $c-blue_pale;
+}
+@include m-smp {
+#page-info-company #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-info-company #S-01 {
+	margin-bottom: 10px;
+	padding: 0 0 30px;
+	.defaultContainer {
+		margin-bottom: 20px;
+	}
+	.moreContainer {
+		display: none;
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+}
+@include m-smp {
+#page-info-company #S-01 {
+}
+}
+
+/* #page-search-result #S-02
+--------------------------------------------------------- */
+#page-info-company #S-02 {
+	padding: 0 0 120px;
+}
+@include m-smp {
+#page-info-company #S-02 {
+	padding: 0 0 80px;
+}
+}

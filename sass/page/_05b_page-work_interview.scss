@@ -1,0 +1,118 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+⑤WORK 各社求人 インタビュー
+========================================================= */
+
+/* #page-work-interview #S-01
+--------------------------------------------------------- */
+#page-work-interview #S-01 {
+    padding-top: 30px;
+    .tab {
+        margin-bottom: 20px;
+    }
+	.cover {
+		margin-bottom: 40px;
+	}
+	.sns {
+		margin-bottom: 40px;
+	}
+    .contents {
+        margin: 0 auto 40px;
+        max-width: 800px;
+		line-height: 1.8;
+        .intro {
+            margin-bottom: 60px;
+        }
+        .introBox {
+            margin-bottom: 60px;
+            box-sizing: border-box;
+            padding: 30px;
+            background: $c-blue_pale;
+            .name {
+                margin-bottom: 10px;
+                color: $c-blue_dark;
+                font-size: 18px;
+            }
+            .text {
+                p {
+                    &:not(:last-child){
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+        .interview {
+            strong {
+                display: block;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+            img, p {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+            p {
+                line-height: 1.8;
+            }
+        }
+    }
+    .guidance {
+        margin-bottom: 160px;
+        text-align: center;
+        .button {
+            margin-bottom: 10px;
+        }
+        a {
+            font-size: 16px;
+            font-weight: bold;
+            color: $c-orange_dark;
+        }
+    }
+}
+@include m-smp {
+#page-work-interview #S-01 {
+    padding-top: 20px;
+    .tab {
+        margin-bottom: 10px;
+    }
+	.cover {
+		margin-bottom: 20px;
+	}
+    .sns {
+        margin-bottom: 20px;
+    }
+    .contents {
+        margin: 0 auto 20px;
+        padding: 0 10px;
+        .intro {
+            margin-bottom: 30px;
+        }
+        .introBox {
+            margin-bottom: 30px;
+            padding: 10px;
+            .name {
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+        .interview {
+            strong {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+    .guidance {
+        margin-bottom: 30px;
+        padding: 0 20px;
+        .button {
+            margin-bottom: 10px;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+}
+}

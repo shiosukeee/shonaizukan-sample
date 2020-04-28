@@ -1,0 +1,175 @@
+﻿// =========================================================
+// @mixinされるパーツ
+// =========================================================
+
+// デバイス振り分け
+//---------------------------------------------------------
+@mixin m-micro {
+	@media screen and (max-width: 370px) {
+		@content;
+	}
+}
+@mixin m-600 {
+	@media screen and (max-width: 600px) {
+		@content;
+	}
+}
+@mixin m-smp {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+@mixin m-tab {
+	@media screen and (max-width: 1000px) {
+		@content;
+	}
+}
+@mixin m-pc {
+	@media screen and (min-width: 769px) {
+		@content;
+	}
+}
+
+// clearfix
+//---------------------------------------------------------
+@mixin m-clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// order
+//---------------------------------------------------------
+@mixin m-order {
+	display: flex;
+	display: -webkit-flexbox;
+	display: -moz-flexbox;
+	display: -ms-flexbox;
+	display: -o-flexbox;
+	display: flexbox;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	.order-01 {
+		-webkit-order: 1;
+		order: 1;
+	}
+	.order-02 {
+		-webkit-order: 2;
+		order: 2;
+	}
+	.order-03 {
+		-webkit-order: 3;
+		order: 3;
+	}
+	.order-04 {
+		-webkit-order: 4;
+		order: 4;
+	}
+	.order-05 {
+		-webkit-order: 5;
+		order: 5;
+	}
+}
+
+// fader
+//---------------------------------------------------------
+@mixin m-fader {
+	@media screen and (min-width: 769px) {
+		transition: opacity 0.5s;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+
+// border-radius のエイリアス
+//---------------------------------------------------------
+@mixin m-hasArrow {
+	&:hover {
+		.parts-arrow {
+			i {
+				width: 28px;
+			}
+			&.news {
+				i {
+					width: 18px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		&:hover {
+			.parts-arrow {
+				i {
+					width: 16px;
+				}
+				&.news {
+					i {
+						width: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// border-radius のエイリアス
+//---------------------------------------------------------
+@mixin m-border-radius($px: 5px) {
+	-webkit-border-radius: $px;
+	-moz-border-radius: $px;
+	border-radius: $px;
+}
+
+// box-shadow のエイリアス
+//---------------------------------------------------------
+@mixin m-box-shadow($px: 3px) {
+	box-shadow:rgba(50, 50, 50, 0.3) 0px 0px $px $px;
+	-webkit-box-shadow:rgba(50, 50, 50, 0.3) 0px 0px $px $px;
+	-moz-box-shadow:rgba(50, 50, 50, 0.3) 0px 0px $px $px;
+}
+
+// アイコン（ストラクチャのみなので、個別でプロパティを補う必要あり）
+//---------------------------------------------------------
+@mixin m-icon($dir, $w, $h, $path) {
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 50%;
+		#{$dir}: 0;
+		transform: translateY(-50%);
+		display: inline-block;
+		content: "";
+		width: $w;
+		height: $h;
+		background: url($path) left top no-repeat;
+		background-size: $w $h;
+	}
+}
+@mixin m-iconHolder() {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	display: inline-block;
+	content: "";
+}
+
+// アイコン（ストラクチャのみなので、個別でプロパティを補う必要あり）
+//---------------------------------------------------------
+@mixin m-flex-VC {
+	display: flex;
+	align-items: center;
+}
+
+// トランジション
+//---------------------------------------------------------
+@mixin m-transition {
+	transition: all 0.3s;
+}
+
+

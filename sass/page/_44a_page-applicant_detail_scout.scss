@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* =========================================================
+㊹求職者詳細　スカウト
+========================================================= */
+
+/* #page-applicant-detail-scout #S-header
+--------------------------------------------------------- */
+#page-applicant-detail-scout #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-applicant-detail-scout #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-applicant-detail-scout #S-01 {
+	padding: 40px 0;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.tab.above {
+		margin-bottom: 30px;
+	}
+	.tags {
+		margin-bottom: 20px;
+	}
+	.buttonMessage {
+		margin-bottom: 30px;
+	}
+}
+@include m-smp {
+#page-applicant-detail-scout #S-01 {
+	padding: 20px 0;
+	.contents {
+		padding: 0 10px;
+	}
+	.tab.above {
+		margin-bottom: 20px;
+	}
+	.buttonMessage {
+		margin-bottom: 20px;
+	}
+}
+}
+
+/* #page-search-result #S-02
+--------------------------------------------------------- */
+#page-applicant-detail-scout #S-02 {
+	padding-bottom: 120px;
+	.buttons {
+		margin-bottom: 80px;
+	}
+}
+@include m-smp {
+#page-applicant-detail-scout #S-02 {
+	padding-bottom: 80px;
+	.buttons {
+		margin-bottom: 40px;
+	}
+}
+}

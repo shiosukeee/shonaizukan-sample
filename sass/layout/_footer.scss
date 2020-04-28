@@ -1,0 +1,118 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+<footer>タグのレイアウト
+========================================================= */
+footer {
+	padding: 90px 0 120px;
+	background: $c-gray_bg;
+	text-align: center;
+	font-size: 12px;
+	a {
+		@include m-fader;
+		color: #4D4D4D;
+		text-decoration: none;
+	}
+	.linklist {
+		font-size: 0;
+		li {
+			display: inline-block;
+			font-size: 14px;
+			&:not(:last-child) {
+				margin-right: 50px;
+			}
+			.small {
+				margin-left: 10px;
+				font-size: 12px;
+			}
+		}
+	}
+	.utility {
+		margin-bottom: 30px;
+		font-weight: bold;
+		& > div {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.sns {
+		border-bottom: 1px solid #D2D2D2;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		ul {
+			li {
+				width: 22px;
+				&:not(:last-child) {
+					margin-right: 25px;
+				}
+			}
+		}
+	}
+	.primary {
+		margin-bottom: 30px;
+		.linklist {
+			margin-bottom: 20px;
+			li {
+				font-size: 12px;
+			}
+		}
+	}
+}
+@include m-smp {
+footer {
+	padding: 80px 0 100px;
+	font-size: 14px;
+	.linklist {
+		li {
+			font-size: 14px;
+			margin: 0 20px !important;
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+			.small {
+				margin-left: 10px;
+				font-size: 14px;
+			}
+		}
+	}
+	.middle .linklist li:last-child {
+		display: block;
+		margin-top: 20px !important;
+	}
+	.utility {
+		margin-bottom: 20px;
+		& > div {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.sns {
+		border-bottom: 1px solid #D2D2D2;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		ul {
+			li {
+				width: 22px;
+				&:not(:last-child) {
+					margin-right: 25px;
+				}
+			}
+		}
+	}
+	.primary {
+		margin-bottom: 20px;
+		.linklist {
+			margin-bottom: 20px;
+			li:first-child {
+				display: block;
+				margin-bottom: 20px !important;
+			}
+		}
+		.powered {
+			margin-bottom: 40px;
+		}
+	}
+}
+}

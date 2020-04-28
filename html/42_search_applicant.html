@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>㊷求職者を探す | ショウナイズカン</title>
+<link href="/assets/css/style.css" type="text/css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/assets/js/libs/sidebar/jquery.simple-sidebar.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+<link href="/assets/js/libs/slick/slick.css" rel="stylesheet">
+<script src="/assets/js/libs/slick/slick.min.js"></script>
+<script src="/assets/js/base.js"></script>
+</head>
+<body id="page-search-applicant" class="js-isLoading">
+<div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v5.0&appId=186390928082168&autoLogAppEvents=1"></script>
+<header id="header" class="logined">
+	<div class="main">
+		<div class="left">
+			<h1><a href="/01_top.html"><img src="/assets/images/cmn/hdr_logo01.png" alt="ショウナイズカン"></a></h1>
+			<div class="baloonSet u-media-PC">
+				<div class="category work">
+					<div class="button">
+						<span><img src="/assets/images/cmn/hdr_nav_ttl01.png" alt="WORK"></span><br class="u-media-TAB">庄内の仕事
+					<!-- .button --></div>
+					<div class="baloon">
+						<nav>
+							<ul>
+							<li><i class="js-callWorkButton"><span>職種で探す</span></i></li>
+							<li><a href="DUMMY"><span>詳細条件で探す</span></a></li>
+							<li><a href="DUMMY"><span>正社員で探す</span></a></li>
+							<li><a href="DUMMY"><span>パート・アルバイトで探す</span></a></li>
+							</ul>
+						</nav>
+						<i class="arrow"></i>
+					<!-- .baloon --></div>
+				<!-- .category.life --></div>
+				<div class="category life">
+					<div class="button">
+						<span><img src="/assets/images/cmn/hdr_nav_ttl02.png" alt="LIFE"></span><br class="u-media-TAB">庄内の暮らし
+					<!-- .button --></div>
+					<div class="baloon">
+					  <nav>
+						<ul>
+							<li><a href="DUMMY"><span>食</span></a></li>
+							<li><a href="DUMMY"><span>遊び</span></a></li>
+							<li><a href="DUMMY"><span>風景</span></a></li>
+							<li><a href="DUMMY"><span>人々</span></a></li>
+						  </ul>
+						</nav>
+						<i class="arrow"></i>
+					<!-- .baloon --></div>
+				<!-- .category.life --></div>
+			<!-- .baloonSet --></div>
+		<!-- .left --></div>
+		<div class="right">
+			<span class="about u-media-PC"><a href="DUMMY" class="u-hover_underline">ABOUT <br class="u-media-TAB">ショウナイズカンとは</a></span>
+			<ul class="utility">
+				<li class="loginButton"><a href="DUMMY" class="container"><span class="name"><strong>ヤマガタデザイン</strong>様</span></a></li>
+				<li class="searchButton"><p class="clickable"><span><strong>検索</strong></span></p></li>
+			<!-- .utility --></ul>
+		<!-- .right --></div>
+	<!-- .main --></div>
+	<div class="main" style="display: none;">
+		<div class="left">
+			<h1><a href="/"><img src="/assets/images/cmn/hdr_logo01.png" alt="ショウナイズカン"></a></h1>
+			<ul class="nav">
+				<li class="work"><a href="DUMMY" class="u-hover_underline"><span><img src="/assets/images/cmn/hdr_nav_ttl01.png" alt="WORK"></span>庄内の仕事</a></li>
+				<li class="life"><a href="DUMMY" class="u-hover_underline"><span><img src="/assets/images/cmn/hdr_nav_ttl02.png" alt="LIFE"></span>庄内の暮らし</a></li>
+			<!-- .nav --></ul>
+		<!-- .left --></div>
+		<div class="right">
+			<span class="about"><a href="DUMMY" class="u-hover_underline">ABOUT ショウナイズカンとは</a></span>
+			<ul class="utility">
+				<li class="loginButton"><a href="DUMMY"><span>ヒューマン・メタボローム・テクノロジーズ株式会… 様</span></a></li>
+				<li class="searchButton"><span><strong>検索</strong></span></li>
+			<!-- .utility --></ul>
+		<!-- .right --></div>
+	<!-- .main --></div>
+	<div id="js-searchBox" class="searchBox">
+		<div class="u-spacer">
+			<div class="searchText">
+				<form>
+					<input type="text">
+					<input type="submit">
+				</form>
+			<!-- .searchText --></div>
+			<div class="tags">
+				<dl>
+					<dt>「WORK」の人気タグ</dt>
+					<dd>
+						<ul class="unit-tags">
+						<li><a href="DUMMY">研究職</a></li>
+						<li><a href="DUMMY">勤務地</a></li>
+						<li><a href="DUMMY">月給15〜50万</a></li>
+						<li><a href="DUMMY">雇用形態</a></li>
+						<li><a href="DUMMY">和食</a></li>
+						<li><a href="DUMMY">酒田市</a></li>
+						<li><a href="DUMMY">博物館</a></li>
+						<li><a href="DUMMY">鶴岡市</a></li>
+						<li><a href="DUMMY">博物館</a></li>
+						<li><a href="DUMMY">酒田市</a></li>
+						</ul>
+					</dd>
+					<dt>「LIFE」の人気タグ</dt>
+					<dd>
+						<ul class="unit-tags">
+						<li><a href="DUMMY">研究職</a></li>
+						<li><a href="DUMMY">勤務地</a></li>
+						<li><a href="DUMMY">月給15〜50万</a></li>
+						<li><a href="DUMMY">雇用形態</a></li>
+						<li><a href="DUMMY">和食</a></li>
+						<li><a href="DUMMY">酒田市</a></li>
+						<li><a href="DUMMY">博物館</a></li>
+						<li><a href="DUMMY">鶴岡市</a></li>
+						<li><a href="DUMMY">博物館</a></li>
+						<li><a href="DUMMY">酒田市</a></li>
+						</ul>
+					</dd>
+				</dl>
+			<!-- .tags --></div>
+		<!-- .u-spacer --></div>
+	<!-- .searchBox --></div>
+	<div id="js-workBox" class="workBox">
+		<div class="u-spacer_narrow">
+			<div class="inner">
+				<h2 class="title"><span>職種で探す</span></h2>
+				<div class="works">
+					<ul>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-01">
+								<label for="workBox-01">土木・建築</label>
+							<!-- .u-checkbox --></span>
+						</li>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-02">
+								<label for="workBox-02">研究</label>
+							<!-- .u-checkbox --></span>
+						</li>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-03">
+								<label for="workBox-03">営業・企画</label>
+							<!-- .u-checkbox --></span>
+						</li>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-04">
+								<label for="workBox-04">サービス・販売</label>
+							<!-- .u-checkbox --></span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-05">
+								<label for="workBox-05">専門職（金融・コンサルタント等）</label>
+							<!-- .u-checkbox --></span>
+						</li>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-06">
+								<label for="workBox-06">IT（エンジニア・ディレクター）</label>
+							<!-- .u-checkbox --></span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-07">
+								<label for="workBox-07">農業</label>
+							<!-- .u-checkbox --></span>
+						</li>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-08">
+								<label for="workBox-08">事務</label>
+							<!-- .u-checkbox --></span>
+						</li>
+						<li>
+							<span class="u-checkbox">
+								<input type="checkbox" id="workBox-09">
+								<label for="workBox-09">エンジニア（機械・電気・半導体等）</label>
+							<!-- .u-checkbox --></span>
+						</li>
+					</ul>
+				<!-- .works --></div>
+				<div class="button">
+					<input type="submit" class="parts-buttonSubmit white" value="検 索">
+				<!-- .button --></div>
+				<div class="close">
+					<span class="js-closeButton">close</span>
+				<!-- .close --></div>
+			<!-- .inner --></div>
+		<!-- .u-spacer_narrow --></div>
+	<!-- .workBox --></div>
+<!-- #header --></header>
+<div id="sb-wrapper">
+<main>
+	<section id="S-header">
+		<div class="u-spacer_narrow">
+			<div class="parts-simpleTitle low dark left">
+				<h2 class="title"><strong>求職者を探す</strong></h2>
+			<!-- .parts-simpleTitle --></div>
+		<!-- .u-spacer_narrow --></div>
+	<!-- #S-header --></section>
+	<section id="S-01">
+		<div class="u-spacer_narrow">
+			<div class="searchBox">
+				<div class="unit-search typeB">
+					<h2 class="parts-unitTitle search"><span>条件を指定して検索</span></h2>
+					<div class="select">
+						<div class="selectArea applicant">
+							<div class="selectBox">
+								<p class="pseudoSelector"><span>当社を「いいね」した求職者</span></p>
+							<!-- .selectBox --></div>
+							<div class="baloon">
+								<nav>
+									<ul>
+										<li>
+										<span class="u-checkbox">
+											<input type="checkbox" id="searchBox_applicant-01">
+											<label for="searchBox_applicant-01">ダミー</label>
+										<!-- .u-checkbox --></span>
+										</li>
+									</ul>
+									<div class="button">
+										<input type="button" class="parts-buttonSubmit mini white" value="OK">
+									<!-- .button --></div>
+									<i class="arrow"></i>
+								</nav>
+							<!-- .baloon --></div>
+						<!-- .selectArea.applicant --></div>
+						<div class="selectArea age">
+							<div class="selectBox">
+								<p class="pseudoSelector"><span>年齢</span></p>
+							<!-- .selectBox --></div>
+							<div class="baloon">
+								<nav>
+									<ul>
+										<li>
+										<span class="u-checkbox">
+											<input type="checkbox" id="searchBox_age-01">
+											<label for="searchBox_age-01">ダミー</label>
+										<!-- .u-checkbox --></span>
+										</li>
+									</ul>
+									<div class="button">
+										<input type="button" class="parts-buttonSubmit mini white" value="OK">
+									<!-- .button --></div>
+									<i class="arrow"></i>
+								</nav>
+							<!-- .baloon --></div>
+						<!-- .selectArea.age --></div>
+						<div class="selectArea willingness">
+							<div class="selectBox">
+								<p class="pseudoSelector"><span>転職意欲</span></p>
+							<!-- .selectBox --></div>
+							<div class="baloon">
+								<nav>
+									<ul>
+										<li>
+										<span class="u-checkbox">
+											<input type="checkbox" id="searchBox_willingness-01">
+											<label for="searchBox_willingness-01">ダミー</label>
+										<!-- .u-checkbox --></span>
+										</li>
+									</ul>
+									<div class="button">
+										<input type="button" class="parts-buttonSubmit mini white" value="OK">
+									<!-- .button --></div>
+									<i class="arrow"></i>
+								</nav>
+							<!-- .baloon --></div>
+						<!-- .selectArea.willingness --></div>
+					<!-- .select --></div>
+					<div class="select narrow">
+						<div class="selectArea exp_industry">
+							<div class="selectBox">
+								<p class="pseudoSelector"><span>経験業種</span></p>
+							<!-- .selectBox --></div>
+							<div class="baloon">
+								<nav>
+									<ul>
+										<li>
+										<span class="u-checkbox">
+											<input type="checkbox" id="searchBox_exp_industry-01">
+											<label for="searchBox_exp_industry-01">ダミー</label>
+										<!-- .u-checkbox --></span>
+										</li>
+									</ul>
+									<div class="button">
+										<input type="button" class="parts-buttonSubmit mini white" value="OK">
+									<!-- .button --></div>
+									<i class="arrow"></i>
+								</nav>
+							<!-- .baloon --></div>
+						<!-- .selectArea.exp_industry --></div>
+						<div class="selectArea exp_occupation">
+							<div class="selectBox">
+								<p class="pseudoSelector"><span>経験職種</span></p>
+							<!-- .selectBox --></div>
+							<div class="baloon">
+								<nav>
+									<ul>
+										<li>
+										<span class="u-checkbox">
+											<input type="checkbox" id="searchBox_exp_occupation-01">
+											<label for="searchBox_exp_occupation-01">ダミー</label>
+										<!-- .u-checkbox --></span>
+										</li>
+									</ul>
+									<div class="button">
+										<input type="button" class="parts-buttonSubmit mini white" value="OK">
+									<!-- .button --></div>
+									<i class="arrow"></i>
+								</nav>
+							<!-- .baloon --></div>
+						<!-- .selectArea.exp_occupation --></div>
+					<!-- .select --></div>
+					<div class="select narrow">
+						<div class="selectArea wish_industry">
+							<div class="selectBox">
+								<p class="pseudoSelector"><span>希望業種</span></p>
+							<!-- .selectBox --></div>
+							<div class="baloon">
+								<nav>
+									<ul>
+										<li>
+										<span class="u-checkbox">
+											<input type="checkbox" id="searchBox_wish_industry-01">
+											<label for="searchBox_wish_industry-01">ダミー</label>
+										<!-- .u-checkbox --></span>
+										</li>
+									</ul>
+									<div class="button">
+										<input type="button" class="parts-buttonSubmit mini white" value="OK">
+									<!-- .button --></div>
+									<i class="arrow"></i>
+								</nav>
+							<!-- .baloon --></div>
+						<!-- .selectArea.wish_industry --></div>
+						<div class="selectArea wish_occupation">
+							<div class="selectBox">
+								<p class="pseudoSelector"><span>希望職種</span></p>
+							<!-- .selectBox --></div>
+							<div class="baloon">
+								<nav>
+									<ul>
+										<li>
+										<span class="u-checkbox">
+											<input type="checkbox" id="searchBox_wish_occupation-01">
+											<label for="searchBox_wish_occupation-01">ダミー</label>
+										<!-- .u-checkbox --></span>
+										</li>
+									</ul>
+									<div class="button">
+										<input type="button" class="parts-buttonSubmit mini white" value="OK">
+									<!-- .button --></div>
+									<i class="arrow"></i>
+								</nav>
+							<!-- .baloon --></div>
+						<!-- .selectArea.wish_occupation --></div>
+					<!-- .select --></div>
+					<div class="button">
+						<input type="submit" class="parts-buttonSubmit" value="検 索">
+					<!-- .button --></div>
+				<!-- .unit-search --></div>
+			<!-- .searchBox --></div>
+		<!-- .u-spacer_narrow --></div>
+	<!-- #S-01 --></section>
+	<section id="S-02">
+		<div class="u-spacer_narrow">
+			<div class="pager above">
+				<div class="unit-pager navy">
+					<div class="inner">
+						<div class="page">
+							<ul>
+								<li><a href="DUMMY"><span>1</span></a></li>
+								<li><a href="DUMMY"><span>2</span></a></li>
+								<li><i class="current"><span>3</span></i></li>
+								<li><a href="DUMMY"><span>4</span></a></li>
+								<li><a href="DUMMY"><span>5</span></a></li>
+							</ul>
+						<!-- .page --></div>
+						<div class="direction">
+							<ul>
+								<li><a href="DUMMY" class="prev"><i>PREV</i></a></li>
+								<li><a href="DUMMY" class="next"><i>NEXT</i></a></li>
+							</ul>
+						<!-- .direction --></div>
+					<!-- .inner --></div>
+				<!-- .unit-pager.navy --></div>
+			<!-- .pager.above --></div>
+			<div class="applicant">
+				<div class="unit-applicant">
+					<article>
+						<div class="inner">
+							<div class="tags">
+								<ul>
+									<li><span class="parts-tag">応募者</span></li>
+									<li><span class="parts-tag">スカウト済</span></li>
+								</ul>
+							</div>
+							<dl>
+								<dt><span>氏 名</span></dt>
+									<dd>（非公開）</dd>
+								<dt><span>年 齢</span></dt>
+									<dd>25歳</dd>
+								<dt><span>住 所</span></dt>
+									<dd>神奈川県 川崎市 高津区 上作延</dd>
+								<dt><span>最新の勤務先</span></dt>
+									<dd>ソニー株式会社</dd>
+								<dt><span>経験業種</span></dt>
+									<dd>情報通信業、製造業</dd>
+								<dt><span>経験職種</span></dt>
+									<dd>事務職、営業企画</dd>
+								<dt><span>資 格</span></dt>
+									<dd>実用英語技能検準一級、普通自動車免許、大型二輪車免許</dd>
+								<dt><span>転職意欲</span></dt>
+									<dd>今すぐ</dd>
+							</dl>
+							<div class="buttons">
+								<div class="unit-scoutButtons">
+									<ul>
+										<li class="detail"><a href="DUMMY" class="parts-button_B short"><span>詳細を見る</span><em class="parts-arrow"><i></i></em></a></li>
+										<li class="utility"><a href="DUMMY" class="parts-button_utility scout"><span>スカウトする</span></a></li>
+										<li class="utility"><a href="DUMMY" class="parts-button_utility concern"><span>気になる</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article>
+						<div class="inner">
+							<div class="tags">
+								<ul>
+									<li><span class="parts-tag">応募者</span></li>
+									<li><span class="parts-tag">スカウト済</span></li>
+								</ul>
+							</div>
+							<dl>
+								<dt><span>氏 名</span></dt>
+									<dd>（非公開）</dd>
+								<dt><span>年 齢</span></dt>
+									<dd>25歳</dd>
+								<dt><span>住 所</span></dt>
+									<dd>神奈川県 川崎市 高津区 上作延</dd>
+								<dt><span>最新の勤務先</span></dt>
+									<dd>ソニー株式会社</dd>
+								<dt><span>経験業種</span></dt>
+									<dd>情報通信業、製造業</dd>
+								<dt><span>経験職種</span></dt>
+									<dd>事務職、営業企画</dd>
+								<dt><span>資 格</span></dt>
+									<dd>実用英語技能検準一級、普通自動車免許、大型二輪車免許</dd>
+								<dt><span>転職意欲</span></dt>
+									<dd>今すぐ</dd>
+							</dl>
+							<div class="buttons">
+								<div class="unit-scoutButtons">
+									<ul>
+										<li class="detail"><a href="DUMMY" class="parts-button_B short"><span>詳細を見る</span><em class="parts-arrow"><i></i></em></a></li>
+										<li class="utility"><a href="DUMMY" class="parts-button_utility scout"><span>スカウトする</span></a></li>
+										<li class="utility"><a href="DUMMY" class="parts-button_utility concern"><span>気になる</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article>
+						<div class="inner">
+							<div class="tags">
+								<ul>
+									<li><span class="parts-tag">応募者</span></li>
+									<li><span class="parts-tag">スカウト済</span></li>
+								</ul>
+							</div>
+							<dl>
+								<dt><span>氏 名</span></dt>
+									<dd>（非公開）</dd>
+								<dt><span>年 齢</span></dt>
+									<dd>25歳</dd>
+								<dt><span>住 所</span></dt>
+									<dd>神奈川県 川崎市 高津区 上作延</dd>
+								<dt><span>最新の勤務先</span></dt>
+									<dd>ソニー株式会社</dd>
+								<dt><span>経験業種</span></dt>
+									<dd>情報通信業、製造業</dd>
+								<dt><span>経験職種</span></dt>
+									<dd>事務職、営業企画</dd>
+								<dt><span>資 格</span></dt>
+									<dd>実用英語技能検準一級、普通自動車免許、大型二輪車免許</dd>
+								<dt><span>転職意欲</span></dt>
+									<dd>今すぐ</dd>
+							</dl>
+							<div class="buttons">
+								<div class="unit-scoutButtons">
+									<ul>
+										<li class="detail"><a href="DUMMY" class="parts-button_B short"><span>詳細を見る</span><em class="parts-arrow"><i></i></em></a></li>
+										<li class="utility"><a href="DUMMY" class="parts-button_utility scout"><span>スカウトする</span></a></li>
+										<li class="utility"><a href="DUMMY" class="parts-button_utility concern"><span>気になる</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+				<!-- .unit-applicant --></div>
+			<!-- .applicant --></div>
+			<div class="pager below">
+				<div class="unit-pager navy">
+					<div class="inner">
+						<div class="page">
+							<ul>
+								<li><a href="DUMMY"><span>1</span></a></li>
+								<li><a href="DUMMY"><span>2</span></a></li>
+								<li><i class="current"><span>3</span></i></li>
+								<li><a href="DUMMY"><span>4</span></a></li>
+								<li><a href="DUMMY"><span>5</span></a></li>
+							</ul>
+						<!-- .page --></div>
+						<div class="direction">
+							<ul>
+								<li><a href="DUMMY" class="prev"><i>PREV</i></a></li>
+								<li><a href="DUMMY" class="next"><i>NEXT</i></a></li>
+							</ul>
+						<!-- .direction --></div>
+					<!-- .inner --></div>
+				<!-- .unit-pager.navy --></div>
+			<!-- .pager.below --></div>
+		<!-- .u-spacer_narrow --></div>
+	<!-- #S-02 --></section>
+</main>
+<footer>
+	<div class="u-spacer">
+		<div class="utility">
+			<div class="above">
+				<ul class="linklist">
+					<li><a href="DUMMY">WORK</a></li>
+					<li><a href="DUMMY">LIFE</a></li>
+				<!-- .linklist --></ul>
+			<!-- .above --></div>
+			<div class="middle">
+				<ul class="linklist">
+					<li><a href="DUMMY">会員登録</a></li>
+					<li><a href="DUMMY">マイページ</a></li>
+					<li><a href="DUMMY">ABOUT<span class="small">ショウナイズカンとは</span></a></li>
+				<!-- .linklist --></ul>
+			<!-- .middle --></div>
+			<div class="below">
+				<ul class="linklist">
+					<li><a href="DUMMY">YD BLOG</a></li>
+				<!-- .linklist --></ul>
+			<!-- .below --></div>
+		<!-- .utility --></div>
+		<div class="sns">
+			<ul class="linklist">
+				<li><a href="DUMMY"><span><img src="/assets/images/cmn/ftr_sns_ic01.png" alt=""></span></a></li>
+				<li><a href="DUMMY"><span><img src="/assets/images/cmn/ftr_sns_ic02.png" alt=""></span></a></li>
+				<li><a href="DUMMY"><span><img src="/assets/images/cmn/ftr_sns_ic03.png" alt=""></span></a></li>
+				<li><a href="DUMMY"><span><img src="/assets/images/cmn/ftr_sns_ic04.png" alt=""></span></a></li>
+			<!-- .linklist --></ul>
+		<!-- .sns --></div>
+		<div class="primary">
+			<ul class="linklist">
+				<li><a href="DUMMY">プライバシーポリシー</a></li>
+				<li><a href="DUMMY">CONTACT US</a></li>
+				<li><a href="DUMMY">求人掲載をご希望の企業の方</a></li>
+			<!-- .linklist --></ul>
+			<p class="powered">Powered by YAMAGATA DESIGN</p>
+		<!-- .primary --></div>
+		<div class="copyright">
+			<p>&copy; SHONAIZUKAN 2020</p>
+		<!-- .copyright --></div>
+	<!-- .u-spacer --></div>
+</footer>
+<!-- #sb-wrapper --></div>
+<div id="menuButton" class="menuButton"><p class="clickable"><span><strong>メニュー</strong></span></p></div>
+<aside id="sidebar">
+<div id="overflow">
+	<div class="u-spacer">
+		<div class="inner">
+			<article class="work">
+				<h2 class="navHeader"><a href="DUMMY"><strong><img src="/assets/images/cmn/aside_nav_tl01.png" alt="WORK"></strong><span>庄内の仕事</span><i class="icon"></i></a></h2>
+				<ul class="navList">
+					<li><p class="js-callWorkButton"><span>職種で探す</span><i class="icon"></i></p></li>
+					<li><a href="DUMMY"><span>詳細条件で探す</span><i class="icon"></i></a></li>
+					<li><a href="DUMMY"><span>正社員で探す</span><i class="icon"></i></a></li>
+					<li><a href="DUMMY"><span>パート・アルバイトで探す</span><i class="icon"></i></a></li>
+				<!-- .navList --></ul>
+			<!-- .work --></article>
+			<article class="life">
+				<h2 class="navHeader"><a href="DUMMY"><strong><img src="/assets/images/cmn/aside_nav_tl02.png" alt="LIFE"></strong><span>庄内の暮らし</span><i class="icon"></i></a></h2>
+				<ul class="navList">
+					<li><a href="DUMMY"><span>食</span><i class="icon"></i></a></li>
+					<li><a href="DUMMY"><span>遊び</span><i class="icon"></i></a></li>
+					<li><a href="DUMMY"><span>風景</span><i class="icon"></i></a></li>
+					<li><a href="DUMMY"><span>人々</span><i class="icon"></i></a></li>
+				<!-- .navList --></ul>
+			<!-- .life --></article>
+			<nav class="priority">
+				<ul>
+					<li class="navHeader"><a href="DUMMY"><strong>ABOUT</strong><span>ショウナイズカンとは</span><i class="icon"></i></a></li>
+					<li class="navHeader"><a href="DUMMY"><strong>会員登録</strong><span>[無料]</span><i class="icon"></i></a></li>
+					<li class="navHeader"><a href="DUMMY"><strong>ログイン</strong><i class="icon"></i></a></li>
+				</ul>
+			<!-- .priority --></nav>
+			<div class="sns">
+				<ul class="linklist">
+					<li><a href="DUMMY"><span><img src="/assets/images/cmn/aside_sns_ic01.png" alt=""></span></a></li>
+					<li><a href="DUMMY"><span><img src="/assets/images/cmn/aside_sns_ic02.png" alt=""></span></a></li>
+					<li><a href="DUMMY"><span><img src="/assets/images/cmn/aside_sns_ic03.png" alt=""></span></a></li>
+					<li><a href="DUMMY"><span><img src="/assets/images/cmn/aside_sns_ic04.png" alt=""></span></a></li>
+				<!-- .linklist --></ul>
+			<!-- .sns --></div>
+		<!-- .inner --></div>
+	<!-- .u-spacer --></div>
+<!-- #overflow --></div>
+<!-- #sidebar --></aside>
+<div id="modalLike">
+	<div class="bg">
+		<div class="text">
+			<p>あなたが「いいね」したことが企業に通知されます。<br>
+			企業もあなたに興味を持てば、メッセージが返ってきます。</p>
+		<!-- .text --></div>
+		<div class="select">
+			<p class="yes"><a href="DUMMY" class="u-underline"><strong>「いいね」する</strong></a></p>
+			<p class="no"><span class="u-underline js-closer">「いいね」しない</span></p>
+		<!-- .select --></div>
+		<div class="message">
+			<p>
+				<span class="u-checkbox">
+				<input type="checkbox" id="modalLike-01">
+				<label for="modalLike-01">以降このコメントを表示しない</label>
+				<!-- .u-checkbox --></span>
+			</p>
+		<!-- .message --></div>
+		<div class="closebutton js-closer"><span>close</span></div>
+	<!-- .bg --></div>
+<!-- #modalLike --></div>
+<div id="pagetop"><a href="#"><span>ページの先頭へ</span></a></div>
+<div id="loader"><h1><span id="js-loader"><i>ショウナイズカン</i></span></h1></div>
+</body>
+</html>

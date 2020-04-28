@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* =========================================================
+㉞WEB履歴書　職務経歴①
+========================================================= */
+
+/* #page-resume-career01 #S-header
+--------------------------------------------------------- */
+#page-resume-career01 #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-resume-career01 #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-resume-career01 #S-01 {
+	padding: 40px 0;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.tab.above {
+		margin-bottom: 50px;
+	}
+	.buttonEdit {
+		margin-bottom: 40px;
+	}
+	.table {
+		&:not(:last-child){
+			margin-bottom: 40px;
+		}
+	}
+	.js-careerTable {
+		display: none;
+		margin-top: 40px;
+	}
+	.buttonAddCareer {
+    	margin-top: 40px;
+    	margin-bottom: 100px;
+		text-align: center;
+	}
+}
+@include m-smp {
+#page-resume-career01 #S-01 {
+	padding: 20px 0 30px;
+	.contents {
+		padding: 0 10px;
+	}
+	.tab.above {
+		margin-bottom: 20px;
+	}
+	.buttonEdit {
+		margin-bottom: 20px;
+	}
+	.table {
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
+	}
+	.buttonAddCareer {
+    	margin-bottom: 60px;
+	}
+}
+}
+
+/* #page-search-result #S-02
+--------------------------------------------------------- */
+#page-resume-career01 #S-02 {
+	padding-bottom: 120px;
+}
+@include m-smp {
+#page-resume-career01 #S-02 {
+	padding-bottom: 80px;
+}
+}

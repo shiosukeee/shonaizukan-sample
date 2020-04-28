@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* =========================================================
+㉖WORK 会員登録でできること
+========================================================= */
+
+/* #page-work-regist #S-header
+--------------------------------------------------------- */
+#page-work-regist #S-header {
+	background: $c-blue_pale;
+	.parts-categoryTitle {
+		span {
+			display: inline-block;
+			width: 386px;
+		}
+	}
+}
+@include m-smp {
+#page-work-regist #S-header {
+	background: $c-blue_pale;
+	.parts-categoryTitle {
+		span {
+			width: 76.3%;
+			max-width: 292px;
+		}
+	}
+}
+}
+
+/* #page-work-regist #S-01
+--------------------------------------------------------- */
+#page-work-regist #S-01 {
+	padding: 50px 0;
+	.intro {
+		margin-bottom: 40px;
+		.parts-secTitle_A {
+			margin-bottom: 50px;
+			span {
+				width: 606px;
+			}
+		}
+		.text {
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+}
+@include m-smp {
+#page-work-regist #S-01 {
+	padding: 30px 0;
+	.intro {
+		margin-bottom: 20px;
+		.parts-secTitle_A {
+			position: relative;
+			margin-bottom: 50px;
+			span {
+				width: auto;
+			}
+			.part-A {width: 250px;}
+			.part-B {
+				position: absolute;
+				left: 50%;
+				bottom: -30px;
+				transform: translateX(-50%);
+				width: 212px;
+			}
+		}
+		.text {
+			font-size: 14px;
+		}
+	}
+}
+}
+
+#page-work-regist #S-01 {
+	.articles {
+		margin: 0 auto 60px;
+		max-width: 800px;
+		article {
+			&:not(:last-child) {
+				margin-bottom: 50px;
+			}
+			figure {
+				margin-bottom: 30px;
+				text-align: center;
+				span {
+					display: inline-block;
+					width: 300px;
+				}
+			}
+			.text {
+				font-size: 16px;
+				text-align: center;
+				p {
+					&:not(:last-child) {
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+@include m-smp {
+#page-work-regist #S-01 {
+	.articles {
+		margin: 0 auto 30px;
+		padding: 0 10px;
+		article {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+			figure {
+				margin-bottom: 10px;
+				text-align: center;
+				padding: 0 10px;
+				span {
+					width: auto;
+					max-width: 100%;
+				}
+			}
+			.text {
+				font-size: 14px;
+				p.annotation {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+}
+
+#page-work-regist #S-01 {
+	.regist {
+		.text {
+			margin-bottom: 10px;
+			p {
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	}
+}
+@include m-smp {
+#page-work-regist #S-01 {
+	.regist {
+		.text {
+			p {
+				font-size: 17px;
+			}
+		}
+	}
+}
+}
+
+/* #page-work-regist #S-02
+--------------------------------------------------------- */
+#page-work-regist #S-02 {
+	padding: 50px 0 120px;
+}
+
+@include m-600 {
+#page-work-regist #S-02 {
+	padding: 20px 0 60px;
+}
+}

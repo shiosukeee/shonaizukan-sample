@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* =========================================================
+⑲会員登録：メールアドレス（ID）登録
+========================================================= */
+
+/* #page-regist-email #S-header
+--------------------------------------------------------- */
+#page-regist-email #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-regist-email #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-regist-email #S-01 {
+	padding: 0 0 120px;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.intro {
+		text-align: center;
+		font-size: 14px;
+	}
+	.table {
+		margin-bottom: 20px;
+	}
+	.notice {
+		margin-bottom: 40px;
+		font-size: 12px;
+		dt {
+			font-weight: bold;
+		}
+	}
+}
+@include m-smp {
+#page-regist-email #S-01 {
+	padding: 0 0 60px;
+	.contents {
+		margin: 0 10px;
+	}
+	.intro {
+		font-size: 14px;
+	}
+	.table {
+		margin-bottom: 10px;
+	}
+	.notice {
+		margin-bottom: 20px;
+		font-size: 12px;
+	}
+}
+}

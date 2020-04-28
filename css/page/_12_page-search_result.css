@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* =========================================================
+⑫検索結果一覧
+========================================================= */
+#page-search-reslurt #S-01 {
+  margin-bottom: 10px;
+  padding: 30px 0 50px;
+  background: #F5F5F5; }
+  #page-search-reslurt #S-01 .defaultContainer {
+    margin-bottom: 20px; }
+  #page-search-reslurt #S-01 .moreContainer {
+    display: none; }
+  #page-search-reslurt #S-01 .container {
+    margin: 0 auto;
+    max-width: 800px; }
+
+/*# sourceMappingURL=_12_page-search_result.css.map */

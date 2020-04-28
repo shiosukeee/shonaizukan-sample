@@ -1,0 +1,445 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+LIFEトップページ
+========================================================= */
+
+/* .page-life-category-top #S-header
+--------------------------------------------------------- */
+.page-life-category-top #S-header,
+.page-life-category-article #S-header {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	.parts-title_A.life {
+		margin-bottom: 0;
+		.main span {
+			display: inline-block;
+			width: 316px;
+		}
+	}
+}
+@include m-smp {
+.page-life-category-top #S-header,
+.page-life-category-article #S-header {
+	padding-top: 20px 0;
+	.parts-title_A.life {
+		.main span {
+			width: auto;
+		}
+	}
+}
+}
+
+/* .page-life-category-top #S-01
+--------------------------------------------------------- */
+.page-life-category-top #S-01 {
+	padding-bottom: 50px;
+}
+@include m-smp {
+.page-life-category-top #S-01 {
+	padding-bottom: 40px;
+}
+}
+
+/* #page-life-shoku-top #S-02
+--------------------------------------------------------- */
+.page-life-category-top #S-02 {
+	padding-bottom: 50px;
+	.pager {
+		&.above {
+			margin-bottom: 30px;
+		}
+		&.below {
+			margin-top: 40px;
+		}
+	}
+}
+
+/* #page-life-shoku-top #S-03
+--------------------------------------------------------- */
+.page-life-category-top #S-03 {
+	padding: 50px 0 120px;
+}
+@include m-smp {
+.page-life-category-top #S-03 {
+	padding: 50px 0 60px;
+}
+}
+
+/* =========================================================
+LIFE記事ページ
+========================================================= */
+
+/* .page-life-article #S-header
+--------------------------------------------------------- */
+.page-life-article #S-header {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	.parts-title_A.life {
+		margin-bottom: 0;
+		.main span {
+			display: inline-block;
+			width: 316px;
+		}
+	}
+}
+@include m-smp {
+.page-life-article #S-header {
+	padding-top: 20px 0;
+	.parts-title_A.life {
+		.main span {
+			width: auto;
+		}
+	}
+}
+}
+
+/* .page-life-category-article #S-01
+--------------------------------------------------------- */
+.page-life-category-article #S-01 {
+	padding-bottom: 50px;
+    .tab {
+        margin-bottom: 20px;
+    }
+	.cover {
+		margin-bottom: 40px;
+	}
+    .sns {
+        margin-bottom: 40px;
+    }
+    .contents {
+        margin: 0 auto 40px;
+        max-width: 800px;
+		line-height: 1.8;
+		.carousel {
+			margin: 0 30px;
+		}
+        .intro {
+            margin-bottom: 60px;
+        }
+        .interview {
+            strong {
+                display: block;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+            img, p {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .guidance {
+        text-align: center;
+        .button {
+            margin-bottom: 10px;
+        }
+        a {
+            font-size: 16px;
+            font-weight: bold;
+            color: $c-blue_dark;
+        }
+    }
+}
+@include m-smp {
+.page-life-category-article #S-01 {
+    padding-top: 0;
+	padding-bottom: 30px;
+    .tab {
+        margin-bottom: 10px;
+    }
+	.cover {
+		margin-bottom: 20px;
+	}
+    .sns {
+        margin-bottom: 20px;
+    }
+    .contents {
+        margin: 0 auto 20px;
+        padding: 0 10px;
+		.carousel {
+			margin: 0;
+		}
+        .intro {
+            margin-bottom: 30px;
+        }
+        .interview {
+            strong {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+    .guidance {
+        padding: 0 20px;
+        .button {
+            margin-bottom: 10px;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+}
+}
+
+/* #page-life-shoku-article #S-01
+--------------------------------------------------------- */
+#page-life-asobi-article #S-01,
+#page-life-fukei-article #S-01,
+#page-life-shoku-article #S-01 {
+	.carousel {
+		margin-bottom: 30px;
+	}
+	.tags {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.desc {
+		margin-bottom: 30px;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+		}
+	}
+	.coupon {
+		margin-bottom: 40px;
+		padding: 40px;
+		background: #FFF;
+		.title {
+			display: block;
+			margin-bottom: 20px;
+			text-align: center;
+			font-size: 20px;
+		}
+		.ticket {
+			display: flex;
+			margin: 0 auto 10px;
+			max-width: 520px;
+			.header {
+				width: 21.1%;
+			}
+			.offer {
+				position: relative;
+				width: 78.9%;
+				.inner {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					text-align: center;
+				}
+				span {
+					display: block;
+					line-height: 1;
+					font-weight: bold;
+					&.offer_title {font-size: 16px;}
+					&.offer_off {
+						white-space: nowrap;
+						margin: 10px 0;
+						font-size: 24px;
+						strong {
+							display: inline-block;
+							margin: 0 5px;
+							font-size: 48px;
+							color: $c-orange_dark;
+							vertical-align: middle;
+						}
+					}
+					&.offer_expired {
+						display: inline-block;
+						padding: 4px 10px;
+						font-size: 14px;
+						color: #FFF;
+						background: #C4BC98;
+					}
+				}
+			}
+		}
+		.conditions {
+			margin-bottom: 10px;
+			ul {
+				li {
+					position: relative;
+					padding-left: 1.2em;
+					&:before {
+						position: absolute;
+						left: 0;
+						top: 4px;
+						display: inline-block;
+						content: "";
+						border-radius: 50%;
+						width: 1em;
+						height: 1em;
+						background: $c-orange_dark;
+					}
+				}
+			}
+		}
+		.wrapper {
+			margin: 0 auto;
+			max-width: 500px;
+		}
+	}
+	.table {
+		margin-bottom: 40px;
+	}
+	.gmap {
+		border: 10px solid #FFF;
+	}
+	.guidance {
+		margin-bottom: 0;
+		padding: 0 10px;
+	}
+}
+#page-life-asobi-article #S-01 {
+.u-table.life {
+	tr {
+		&:not(:last-child) {
+			th, td {
+				border-bottom: 2px solid #E7F1EC;
+			}
+		}
+	}
+	th {
+		background: #C4BC98;
+	}
+	td {
+		background: #FFFFFF;
+	}
+}
+}
+#page-life-fukei-article #S-01 {
+.u-table.life {
+	tr {
+		&:not(:last-child) {
+			th, td {
+				border-bottom: 2px solid #E3F4FB;
+			}
+		}
+	}
+	th {
+		background: #C4BC98;
+	}
+	td {
+		background: #FFFFFF;
+	}
+}
+}
+#page-life-shoku-article #S-01 {
+.u-table.life {
+	tr {
+		&:not(:last-child) {
+			th, td {
+				border-bottom: 2px solid #FEFAE1;
+			}
+		}
+	}
+	th {
+		background: #C4BC98;
+	}
+	td {
+		background: #FFFFFF;
+	}
+}
+}
+
+@include m-smp {
+#page-life-shoku-article #S-01 {
+	.carousel {
+		margin-bottom: 20px;
+	}
+	.tags {
+		margin-bottom: 20px;
+	}
+	.desc {
+		margin-bottom: 30px;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+		}
+	}
+	.coupon {
+		margin-bottom: 20px;
+		padding: 20px 10px;
+		.title {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 15px;
+		}
+		.ticket {
+			display: block;
+			margin: 0 auto 10px;
+			max-width: 330px;
+			.header {
+				width: 100%;
+			}
+			.offer {
+				width: 100%;
+				span {
+					&.offer_title {font-size: 16px;}
+					&.offer_off {
+						font-size: 22px;
+						strong {
+							margin: 0 5px;
+							font-size: 44px;
+						}
+					}
+					&.offer_expired {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.table {
+		margin-bottom: 20px;
+	}
+	.gmap {
+		border: 5px solid #FFF;
+		.u-iframe {
+			padding-top: 140%;
+		}
+	}
+	.guidance {
+		margin-bottom: 0;
+		padding: 0 10px;
+	}
+}
+}
+@include m-micro {
+#page-life-shoku-article #S-01 {
+	.coupon {
+		.ticket {
+			.offer {
+				span {
+					&.offer_title {font-size: 14px;}
+					&.offer_off {
+						font-size: 16px;
+						strong {
+							font-size: 32px;
+						}
+					}
+					&.offer_expired {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+}
+
+/* #page-life-shoku-article #S-02
+--------------------------------------------------------- */
+.page-life-category-article #S-02 {
+	padding: 50px 0 120px;
+}
+@include m-smp {
+.page-life-category-article #S-02 {
+	padding: 50px 0 80px;
+}
+}
+

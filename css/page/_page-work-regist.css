@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* =========================================================
+㉖WORK 会員登録でできること
+========================================================= */
+/* #page-work-regist #S-header
+--------------------------------------------------------- */
+#page-work-regist #S-header .parts-categoryTitle {
+  background: $c-blue_pale; }
+
+/*# sourceMappingURL=_page-work-regist.css.map */

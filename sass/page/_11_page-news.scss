@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* =========================================================
+⑪NEWS
+========================================================= */
+#page-news #S-01 {
+	margin-bottom: 10px;
+	padding: 60px 0 50px;
+	background: $c-gray_bg;
+	.defaultContainer {
+		margin-bottom: 20px;
+	}
+	.moreContainer {
+		display: none;
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+}
+@include m-smp {
+#page-news #S-01 {
+	padding: 30px 0;
+}
+}

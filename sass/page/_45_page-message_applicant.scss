@@ -1,0 +1,30 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+㊺応募者 メッセージ
+========================================================= */
+
+/* #page-message-applicant #S-header
+--------------------------------------------------------- */
+#page-message-applicant #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-message-applicant #S-header {
+}
+}
+
+
+
+/* #page-message-applicant #dialogue
+--------------------------------------------------------- */
+#page-message-applicant #dialogue {
+	padding-top: 30px;
+}
+@include m-smp {
+#page-message-applicant #dialogue {
+	padding-top: 40px;
+}
+}
+

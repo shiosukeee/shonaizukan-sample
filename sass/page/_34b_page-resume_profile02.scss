@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* =========================================================
+㉞WEB履歴書　プロフィール②
+========================================================= */
+
+/* #page-resume-profile02 #S-header
+--------------------------------------------------------- */
+#page-resume-profile02 #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-resume-profile02 #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-resume-profile02 #S-01 {
+	padding: 40px 0;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.tab.above {
+		margin-bottom: 50px;
+	}
+	.table {
+		margin-bottom: 40px;
+	}
+}
+@include m-smp {
+#page-resume-profile02 #S-01 {
+	padding: 20px 0;
+	.contents {
+		padding: 0 10px;
+	}
+	.tab.above {
+		margin-bottom: 20px;
+	}
+	.table {
+		margin-bottom: 20px;
+	}
+}
+}
+
+/* #page-search-result #S-02
+--------------------------------------------------------- */
+#page-resume-profile02 #S-02 {
+	padding-bottom: 120px;
+}
+@include m-smp {
+#page-resume-profile02 #S-02 {
+	padding-bottom: 80px;
+}
+}

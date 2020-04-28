@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* =========================================================
+WORK 共通パーツ
+========================================================= */
+
+/* #S-work_header
+--------------------------------------------------------- */
+#S-work_header {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: $c-blue_pale;
+	.parts-title_A.work {
+		margin-bottom: 30px;
+		.main span {
+			display: inline-block;
+			width: 386px;
+		}
+	}
+}
+@include m-smp {
+#S-work_header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.parts-title_A.work {
+		margin-bottom: 20px;
+		.main span {
+			width: auto;
+		}
+	}
+}
+}
+
+/* #S-WORK_spTab
+--------------------------------------------------------- */
+#S-WORK_spTab {
+    margin: 0 10px 50px;
+    .unit-tabs {
+        ul {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+}
+@include m-smp {
+#S-WORK_spTab {
+    margin: 0 0 50px;
+}
+}
+
+/* #S-work_OTHER
+--------------------------------------------------------- */
+#S-work_OTHER {
+	margin-bottom: 2px;
+	padding: 60px 0 40px;
+	background: $c-blue_pale;
+    .works {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+}
+@include m-smp {
+#S-work_OTHER {
+	margin-bottom: 2px;
+	padding: 20px 0 30px;
+}
+}
+
+/* #S-work_SEARCH_TAG
+--------------------------------------------------------- */
+#S-work_SEARCH_TAG {
+	margin-bottom: 2px;
+	padding: 50px 0;
+	background: $c-blue_pale;
+    .tags {
+        text-align: center;
+    }
+}
+@include m-smp {
+#S-work_SEARCH_TAG {
+	padding: 20px 0;
+}
+}
+
+/* #S-work_SEARCH_CONDITION
+--------------------------------------------------------- */
+#S-work_SEARCH_CONDITION {
+	margin-bottom: 2px;
+	padding: 50px 0;
+	background: $c-blue_pale;
+}
+@include m-smp {
+#S-work_SEARCH_CONDITION {
+	padding: 20px 0;
+}
+}
+
+/* #S-work_OTHER_COMPANY
+--------------------------------------------------------- */
+#S-work_OTHER_COMPANY {
+	padding: 50px 0 120px;
+}
+@include m-smp {
+#S-work_OTHER_COMPANY {
+	padding: 20px 0 70px;
+}
+}
+

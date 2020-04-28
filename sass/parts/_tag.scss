@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* =========================================================
+タグ
+========================================================= */
+
+/* .parts-tag
+--------------------------------------------------------- */
+.parts-tag {
+	display: inline-block;
+	box-sizing: border-box;
+	border: 1px solid #B2B2B2;
+	width: 70px;
+	height: 24px;
+	line-height: 22px;
+	text-align: center;
+	font-size: 12px;
+	color: #B2B2B2;
+	&.isActive {
+		border: none;
+		color: #FFF;
+		background: #FF5000;
+	}
+}
+

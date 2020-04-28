@@ -1,0 +1,157 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+⑤WORK 各社求人 募集概要
+========================================================= */
+
+/* #page-work-outline #S-01
+--------------------------------------------------------- */
+#page-work-outline #S-01 {
+	margin-bottom: 100px;
+	padding-top: 30px;
+	.tab {
+		margin-bottom: 30px;
+	}
+	.intro {
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.photo {
+		margin-bottom: 40px;
+	}
+	.data {
+		margin: 0 50px 20px;
+	}
+	.button {
+		text-align: center;
+	}
+}
+@include m-smp {
+#page-work-outline #S-01 {
+    margin-bottom: 50px;
+	padding-top: 20px;
+	.tab {
+		margin-bottom: 20px;
+	}
+	.intro {
+		margin-bottom: 20px;
+		font-size: 17px;
+	}
+	.photo {
+		margin-bottom: 20px;
+	}
+	.data {
+		margin: 0 10px 20px;
+	}
+}
+}
+
+/* #page-work-outline #S-02
+--------------------------------------------------------- */
+#page-work-outline #S-02 {
+	margin-bottom: 100px;
+	.sectionTitle {
+		margin-bottom: 40px;
+		.parts-secTitle_A {
+			span {width: 145px;}
+		}
+	}
+	.table {
+		margin: 0 50px;
+	}
+}
+@include m-smp {
+#page-work-outline #S-02 {
+	margin-bottom: 50px;
+	.sectionTitle {
+		margin-bottom: 20px;
+		.parts-secTitle_A {
+			span {width: 104px;}
+		}
+	}
+	.table {
+		margin: 0 10px;
+	}
+}
+}
+
+/* #page-work-outline #S-03
+--------------------------------------------------------- */
+#page-work-outline #S-03 {
+	margin-bottom: 150px;
+	.sectionTitle {
+		margin-bottom: 40px;
+		.parts-secTitle_A {
+			span {width: 532px;}
+		}
+	}
+	.message {
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 30px;
+		max-width: 800px;
+		background: $c-blue_pale;
+		.title {
+			margin-bottom: 10px;
+			font-size: 18px;
+			color: $c-blue_dark;
+		}
+		.flex {
+			display: flex;
+			width: 100%;
+			.photo {
+				margin-right: 20px;
+				figure {
+					box-sizing: border-box;
+					border: 10px solid #FFF;
+					width: 220px;
+				}
+			}
+			.text {
+				p:not(:last-child) {
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}
+@include m-smp {
+#page-work-outline #S-03 {
+	margin-bottom: 30px;
+	.sectionTitle {
+		margin-bottom: 20px;
+		.parts-secTitle_A {
+			span {
+                width: auto;
+                max-width: 347px;
+            }
+		}
+	}
+	.message {
+        margin: 0 10px;
+		padding: 15px;
+		.title {
+			margin-bottom: 10px;
+			font-size: 16px;
+            text-align: center;
+		}
+		.flex {
+			display: block;
+			width: 100%;
+			.photo {
+				margin: 0 0 10px;
+				figure {
+                    margin: 0 auto;
+					border: 5px solid #FFF;
+					width: auto;
+                    max-width: 180px;
+				}
+			}
+		}
+	}
+}
+}
+
+

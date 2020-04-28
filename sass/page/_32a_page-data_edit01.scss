@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* =========================================================
+㉜登録情報の設定・変更①
+========================================================= */
+
+/* #page-data-edit01 #S-header
+--------------------------------------------------------- */
+#page-data-edit01 #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-data-edit01 #S-header {
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-data-edit01 #S-01 {
+	padding: 40px 0;
+	.buttonEdit {
+		margin-bottom: 40px;
+	}
+	.table {
+		&:not(:last-child) {
+			margin-bottom: 80px;
+		}
+	}
+}
+@include m-smp {
+#page-data-edit01 #S-01 {
+	padding: 20px 0;
+	.buttonEdit {
+		margin-bottom: 20px;
+	}
+	.table {
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
+	.buttonContainer {
+		text-align: center;
+	}
+}
+}
+
+/* #page-search-result #S-02
+--------------------------------------------------------- */
+#page-data-edit01 #S-02 {
+	padding: 40px 0 120px;
+}
+@include m-smp {
+#page-data-edit01 #S-02 {
+	padding: 30px 0 80px;
+}
+}

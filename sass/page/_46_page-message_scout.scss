@@ -1,0 +1,30 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+㊻スカウト メッセージ（A）
+========================================================= */
+
+/* #page-message-scout #S-header
+--------------------------------------------------------- */
+#page-message-scout #S-header {
+	color: #FFF;
+	background: $c-blue_dark;
+}
+@include m-smp {
+#page-message-scout #S-header {
+}
+}
+
+
+
+/* #page-message-scout #dialogue
+--------------------------------------------------------- */
+#page-message-scout #dialogue {
+	padding-top: 30px;
+}
+@include m-smp {
+#page-message-scout #dialogue {
+	padding-top: 40px;
+}
+}
+

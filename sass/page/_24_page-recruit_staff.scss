@@ -1,0 +1,596 @@
+@charset "utf-8";
+
+/* =========================================================
+㉔求人掲載をご希望の企業ご担当者さまへ
+========================================================= */
+
+/* #page-recruit-staff #S-header
+--------------------------------------------------------- */
+#page-recruit-staff #S-header {
+	background: $c-blue_pale;
+	.title {
+		span {
+			width: 654px;
+		}
+	}
+}
+@include m-smp {
+#page-recruit-staff #S-header {
+	.title {
+		span {
+			margin: 0 auto;
+			width: 232px;
+		}
+	}
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-recruit-staff #S-01 {
+	margin-bottom: 100px;
+	padding-top: 50px;
+	.sectionTitle {
+		margin-bottom: 40px;
+		text-align: center;
+		.title {
+			display: inline-block;
+			width: 500px;
+		}
+	}
+	.text {
+		margin: 0 auto;
+		max-width: 800px;
+		line-height: 1.8;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 2em;
+			}
+		}
+	}
+}
+@include m-smp {
+#page-recruit-staff #S-01 {
+	margin-bottom: 50px;
+	padding-top: 20px;
+	.sectionTitle {
+		margin-bottom: 20px;
+		.title {
+			width: auto;
+			max-width: 334px;
+		}
+	}
+	.text {
+		margin: 0 10px;
+	}
+}
+}
+
+/* #page-search-result #S-02
+--------------------------------------------------------- */
+#page-recruit-staff #S-02 {
+	margin-bottom: 100px;
+	.sectionTitle {
+		margin-bottom: 30px;
+		.title {
+			span {
+				width: 342px;
+			}
+		}
+	}
+	.feature {
+		margin: 0 auto;
+		max-width: 800px;
+		article {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+			.flex {
+				display: flex;
+				.left, .right {
+					width: 400px;
+				}
+			}
+			.left {
+				display: flex;
+				align-items: center;
+				box-sizing: border-box;
+				position: relative;
+				padding-left: 120px;
+				padding-right: 20px;
+				background: $c-blue_pale;
+				.icon {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100px;
+					height: 100px;
+					background: $c-blue_light;
+					span {
+						display: inline-block;
+						width: 62px;
+					}
+				}
+				.text {
+					.title {
+						margin-bottom: 5px;
+						font-size: 20px;
+						color: $c-blue_light;
+					}
+					.annotation {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+@include m-smp {
+#page-recruit-staff #S-02 {
+	margin-bottom: 50px;
+	.sectionTitle {
+		margin-bottom: 20px;
+		.title {
+			span {
+				width: 246px;
+			}
+		}
+	}
+	.feature {
+		margin: 0 auto;
+		padding: 0 10px;
+		max-width: 400px;
+		article {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+			.flex {
+				display: flex;
+				flex-direction: column-reverse;
+				.left, .right {
+					width: auto;
+					max-width: 400px;
+				}
+			}
+			.left {
+				padding: 5px;
+				padding-left: 80px;
+				.icon {
+					left: 0;
+					top: 0;
+					transform: none;
+					width: 65px;
+					height: 65px;
+					span {
+						width: 34px;
+					}
+				}
+				.text {
+					.title {
+						margin-bottom: 0;
+						font-size: 17px;
+					}
+					p {
+						font-size: 14px;
+					}
+					.annotation {
+						font-size: 11px;
+					}
+				}
+			}
+		}
+	}
+}
+}
+
+/* #page-search-result #S-03
+--------------------------------------------------------- */
+#page-recruit-staff #S-03 {
+	margin-bottom: 100px;
+	.sectionTitle {
+		margin-bottom: 30px;
+		.title {
+			span {
+				width: 344px;
+			}
+		}
+	}
+	.achievement {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 800px;
+		article {
+			width: 190px;
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+		.box {
+			margin-bottom: 10px;
+			.above {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 62px;
+				font-size: 20px;
+				text-align: center;
+				line-height: 1.2;
+				color: #FFF;
+				background: $c-blue_light;
+			}
+			.below {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				background: $c-blue_pale;
+				.number {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100px;
+					width: 100%;
+					font-weight: bold;
+					color: $c-blue_light;
+					strong, span {
+						vertical-align: text-bottom;
+					}
+					strong {
+						font-size: 32px;
+					}
+					span {
+						font-size: 20px;
+					}
+				}
+				.annotation {
+					padding: 10px;
+					padding-top: 0;
+					font-size: 12px;
+					line-height: 1;
+				}
+			}
+		}
+	}
+}
+@include m-smp {
+#page-recruit-staff #S-03 {
+	margin-bottom: 50px;
+	.sectionTitle {
+		margin-bottom: 20px;
+		.title {
+			span {
+				width: 248px;
+			}
+		}
+	}
+	.achievement {
+		display: block;
+		margin: 0 10px;
+		article {
+			width: 100%;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+		.box {
+			margin-bottom: 10px;
+			.above {
+				box-sizing: border-box;
+				padding: 5px;
+				width: 100%;
+				height: auto;
+				font-size: 17px;
+			}
+			.below {
+				.number {
+					height: 60px;
+					width: 100%;
+					strong {
+						font-size: 24px;
+					}
+					span {
+						font-size: 15px;
+					}
+				}
+				.annotation {
+					padding: 5px;
+					padding-top: 0;
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}
+}
+
+/* #page-search-result #S-04
+--------------------------------------------------------- */
+#page-recruit-staff #S-04 {
+	.box {
+		margin-bottom: 100px;
+		padding: 20px;
+		background: $c-blue_pale;
+	}
+	.cover {
+		position: relative;
+		margin-bottom: 20px;
+		figure {
+			border: 10px solid #FFF;
+		}
+		.inner {
+			position: absolute;
+			left: 12%;
+			top: 27%;
+			width: 260px;
+			text-align: center;
+			.catchcopy {
+				display: block;
+				margin-bottom: 10px;
+				padding: 3px 0;
+				font-size: 20px;
+				color: #FFF;
+				background: $c-blue_light;
+			}
+			.name {
+				text-align: center;
+				color: $c-blue_dark;
+				.title {
+					display: inline-block;
+					text-align: left;
+					p {
+						margin-bottom: 5px;
+					}
+					span {
+						font-size: 20px;
+					}
+					strong {
+						margin-right: 5px;
+						font-size: 32px;
+					}
+				}
+			}
+		}
+	}
+	.text {
+		margin: 0 20px;
+		line-height: 1.8;
+	}
+	.button {
+		margin-bottom: 100px;
+		text-align: center;
+		.parts-button_B {
+			width: 400px;
+		}
+	}
+}
+@include m-smp {
+#page-recruit-staff #S-04 {
+	.box {
+		margin: 0 10px;
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+	.cover {
+		margin-bottom: 10px;
+		figure {
+			border: 5px solid #FFF;
+		}
+		.inner {
+			position: absolute;
+			left: 5%;
+			top: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			width: 170px;
+			height: 100%;
+			.catchcopy {
+				box-sizing: border-box;
+				margin-bottom: 10px;
+				width: 100%;
+				padding: 4px;
+				font-size: 12px;
+			}
+			.name {
+				.title {
+					p {
+						margin-bottom: 5px;
+					}
+					span {
+						font-size: 15px;
+					}
+					strong {
+						margin-right: 5px;
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+	.text {
+		margin: 0;
+	}
+	.button {
+		margin: 0 10px;
+		margin-bottom: 50px;
+		.parts-button_B {
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+}
+}
+@include m-micro {
+#page-recruit-staff #S-04 {
+	.cover {
+		.inner {
+			.catchcopy {
+				margin-bottom: 3px;
+				padding: 3px;
+				font-size: 11px;
+			}
+			.name {
+				.title {
+					p {
+						margin-bottom: 5px;
+					}
+					span {
+						font-size: 13px;
+						line-height: 1;
+					}
+					strong {
+						margin-right: 5px;
+						font-size: 24px;
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+}
+}
+
+/* #page-search-result #S-05
+--------------------------------------------------------- */
+#page-recruit-staff #S-05 {
+	margin-bottom: 100px;
+	.sectionTitle {
+		margin-bottom: 40px;
+		.title {
+			span {
+				width: 208px;
+			}
+		}
+	}
+	.data {
+		margin: 0 50px;
+		.table {
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
+		.title {
+			font-size: 18px;
+		}
+		.button {
+			text-align: center;
+			.parts-button_B {
+				width: 250px;
+			}
+		}
+	}
+}
+@include m-smp {
+#page-recruit-staff #S-05 {
+	margin-bottom: 50px;
+	.sectionTitle {
+		margin-bottom: 20px;
+		.title {
+			span {
+				width: 150px;
+			}
+		}
+	}
+	.data {
+		margin: 0 10px;
+		.table {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		.title {
+			font-size: 16px;
+		}
+		.button {
+			text-align: center;
+			.parts-button_B {
+				width: 250px;
+			}
+		}
+	}
+}
+}
+
+/* #page-search-result #S-06
+--------------------------------------------------------- */
+#page-recruit-staff #S-06 {
+	margin-bottom: 120px;
+	.sectionTitle {
+		margin-bottom: 40px;
+		.title {
+			span {
+				width: 322px;
+			}
+		}
+	}
+	.flow {
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 0 10px;
+		max-width: 800px;
+		&.before {margin-bottom: 80px;}
+		&.after {margin-bottom: 100px;}
+		.steps {
+			box-sizing: border-box;
+			margin: 0 auto;
+			padding: 10px;
+			max-width: 700px;
+		}
+	}
+	.button {
+		text-align: center;
+		.parts-button_B {
+			width: 400px;
+		}
+	}
+}
+@include m-smp {
+#page-recruit-staff #S-06 {
+	margin-bottom: 50px;
+	.sectionTitle {
+		margin-bottom: 20px;
+		.title {
+			span {
+				width: 215px;
+			}
+		}
+	}
+	.flow {
+		margin: 0 10px;
+		&.before {margin-bottom: 40px;}
+		&.after {margin-bottom: 50px;}
+		.steps {
+			margin: 0 10px;
+		}
+	}
+	.button {
+		margin: 0 10px 50px;
+		.parts-button_B {
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+}	
+}
+@include m-micro {
+#page-recruit-staff #S-06 {
+	.u-stepBox {
+		.title {
+			font-size: 13px;
+			padding-left: 30px;
+		}
+	}
+	.button {
+		.parts-button_B {
+			span {
+				font-size: 15px;
+			}
+		}
+	}
+}
+}

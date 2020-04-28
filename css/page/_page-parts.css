@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* =========================================================
+共通パーツ
+========================================================= */
+/* #top #S-cover
+--------------------------------------------------------- */
+#page-parts header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px; }
+
+#page-parts article .name {
+  margin-bottom: 10px; }
+  #page-parts article .name span {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #FFF;
+    background: #000; }
+
+/*# sourceMappingURL=_page-parts.css.map */

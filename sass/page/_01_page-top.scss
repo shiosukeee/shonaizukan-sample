@@ -1,0 +1,203 @@
+﻿@charset "utf-8";
+
+/* =========================================================
+トップページ
+========================================================= */
+
+/* #top #S-cover
+--------------------------------------------------------- */
+#page-top #S-cover {
+	.table {
+		display: table;
+		width: 100%;
+		height: 500px;
+		article {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			width: 50%;
+			.title {
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			.button {
+				display: block;
+				text-align: center;
+			}
+		}
+		.work {
+			.title {
+				width: 345px;
+			}
+		}
+		.life {
+			.title {
+				width: 245px;
+			}
+		}
+	}
+	.vegas-wrapper {
+		padding: 0 !important;
+	}
+}
+@include m-smp {
+#page-top #S-cover {
+	.js-vegas {
+		padding-top: 96%;
+		height: 0 !important;
+	}
+	.table {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: auto;
+		right: auto;
+		height: 100% !important;
+		article {
+			.title {
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+		}
+		.work {
+			.title {
+				width: 89.8%;
+				max-width: 345px;
+			}
+		}
+		.life {
+			.title {
+				width: 63.8%;
+				max-width: 245px;
+			}
+		}		
+	}
+}
+}
+
+/* #top #S-01
+--------------------------------------------------------- */
+#page-top #S-01 {
+	.intro {
+		padding: 30px 0 50px;
+		background: url("/assets/images/top/top-S01_bg01.png") center bottom no-repeat;
+		background-size: 100% 75%;
+		.title {
+			margin: 0 auto 50px;
+			width: 641px;
+		}
+		.text {
+			margin: 0 auto;
+			width: 581px;
+		}
+	}
+	.banner {
+		padding: 50px;
+		.slider {
+			margin: 0 auto;
+			max-width: 840px;
+			a {
+				@include m-fader;
+			}
+		}
+	}
+}
+@include m-smp {
+#page-top #S-01 {
+	.intro {
+		padding: 30px 0 50px;
+		background: url("/assets/images/top/top-S01_bg01__SP.png") center bottom no-repeat;
+		background-size: 100% 80%;
+		.title {
+			margin: 0 auto 20px;
+			width: 277px;
+		}
+		.text {
+			width: 303px;
+		}
+	}
+	.banner {
+		.slider {
+			max-width: 556px;
+		}
+	}
+}
+}
+
+/* #top #S-02
+--------------------------------------------------------- */
+#page-top #S-02 {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 60px 0 80px;
+	background: $c-blue_pale;
+}
+@include m-smp {
+#page-top #S-02 {
+	margin-bottom: 10px;
+	padding: 40px 0 10px;
+	.search {
+		margin-bottom: 20px;
+	}
+}
+}
+
+#page-top #S-02 .companies {
+	margin-bottom: 40px;
+}
+
+/* #top #S-03
+--------------------------------------------------------- */
+#page-top #S-03 {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 60px 0;
+	background: $c-beige_pale;
+	.parts-title_A.life {
+		.main {
+			width: 32.5%;
+		}
+	}
+}
+@include m-smp {
+#page-top #S-03 {
+	padding: 20px 0 30px;
+	.parts-title_A.life {
+		.main {
+			width: 240px;
+		}
+	}
+}
+}
+#page-top #S-03 .entertainment {
+	margin-bottom: 30px;
+}
+#page-top #S-03 .search {
+}
+
+/* #top #S-04
+--------------------------------------------------------- */
+#page-top #S-04 {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 50px 0;
+	background: $c-gray_bg;
+	.container {
+		margin: 0 auto;
+		max-width: 800px;
+		.more {
+			margin-top: 10px;
+		}
+	}
+}
+@include m-smp {
+#page-top #S-04 {
+	padding: 20px 0 30px;
+	.parts-title_A {
+		margin-bottom: 10px;
+	}
+}
+}
+
+
+

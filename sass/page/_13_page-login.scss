@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* =========================================================
+⑬ログイン
+========================================================= */
+
+/* #page-login #S-header
+--------------------------------------------------------- */
+#page-login #S-header {
+	background: $c-blue_pale;
+	.title {
+		span {
+			width: 215px;
+		}
+	}
+}
+@include m-smp {
+#page-login #S-header {
+	.title {
+		span {
+			margin: 0 auto;
+			width: 154px;
+		}
+	}
+}
+}
+
+/* #page-search-result #S-01
+--------------------------------------------------------- */
+#page-login #S-01 {
+	padding: 0 0 120px;
+	.contents {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.table {
+		margin-bottom: 20px;
+	}
+	.nonmember {
+		border-top: 1px solid #DCDCDC;
+		margin-top: 40px;
+		padding-top: 40px;
+	}
+}
+@include m-smp {
+#page-login #S-01 {
+	padding: 0 0 60px;
+	.contents {
+		margin: 0 10px;
+	}
+	.nonmember {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+}
+}
